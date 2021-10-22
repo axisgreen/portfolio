@@ -12,7 +12,7 @@ const LogoLink: React.FC<Props> = ({ to, linkContent, transition }) => {
 		<NavLink
 			exact
 			to={to}
-			className={` text-3xl font-medium p-2 hover:bg-gray-100 rounded-md ${
+			className={` text-3xl font-medium p-2 hover:bg-gray-100 hover:text-black rounded-md ${
 				transition ? "transition-all" : ""
 			}`}
 		>

@@ -1,23 +1,44 @@
 import React from "react";
-import PrimaryButton from "../components/common/Button";
+import PrimaryButton from "../components/common/PrimaryButton";
+import SecondaryButton from "../components/common/SecondaryButton";
+import ExoTwoFont from "../components/fonts/ExoTwoFont";
+import Typist from "react-typist";
+import "react-typist/dist/Typist.css";
 
-const MainView: React.FC = () => {
+const HomeView: React.FC = () => {
 	return (
-		<div className="flex h-full flex-col justify-end p-10 m-10 py-64 my-32 ">
-			<div className="uppercase text-lg">haritha dissanayake</div>
-			<div className="text-6xl">Full-stack Developer</div>
-			<div className="text-base">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-				error, provident fugit quam animi veniam aliquam vitae adipisci
-				voluptatum? Velit aut, voluptate perferendis maiores atque aliquam
-				sapiente ipsum fuga dolorum.
-			</div>
-			<div className="flex gap-2 my-2">
-				<PrimaryButton buttonText="Get in Touch" />
-				<PrimaryButton buttonText="Get in Touch" />
+		<div className="ml-10 py-48 my-auto">
+			<div className="flex flex-col justify-center 3xl:items-center">
+				<ExoTwoFont>
+					<div className="p-0 m-0 text-6xl lg:text-8xl">
+						Haritha Dissanayake
+					</div>
+				</ExoTwoFont>
+				<div className="mx-1 py-4 text-2xl lg:text-4xl font-mono ">
+					<div className="flex">
+						<Typist
+							cursor={{
+								show: true,
+								blink: true,
+								hideWhenDone: true,
+							}}
+						>
+							&lt;Web
+							<Typist.Backspace count={"Web".length} delay={1000} />
+							Mobile
+							<Typist.Backspace count={"Mobile".length} delay={1000} />
+							Full-stack Developer /&gt;
+						</Typist>
+					</div>
+				</div>
+
+				<div className="flex gap-2 my-2 mx-1">
+					<PrimaryButton buttonText="Get in Touch" />
+					<SecondaryButton buttonText="View my work" />
+				</div>
 			</div>
 		</div>
 	);
 };
 
-export default MainView;
+export default HomeView;
