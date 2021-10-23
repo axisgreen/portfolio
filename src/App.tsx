@@ -2,23 +2,13 @@ import "./App.css";
 import HomeView from "./views/HomeView";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import viewBackgroundv1 from "./assets/backgrounds/wave-haikei-v1.svg";
-import viewBackgroundv2 from "./assets/backgrounds/wave-haikei-v2.svg";
-import viewBackgroundv3 from "./assets/backgrounds/wave-haikei-v3.svg";
-import viewBackgroundv4 from "./assets/backgrounds/wave-haikei-v4.svg";
-import RandomPageBackground from "./components/common/RandomPageBackground";
 import Footer from "./components/Footer";
+import PageBackground from "./components/common/PageBackground";
+import getRandomBackground from "./helpers/getRandomBackground";
 function App() {
 	return (
 		<div>
-			<RandomPageBackground
-				imageList={[
-					viewBackgroundv1,
-					viewBackgroundv2,
-					viewBackgroundv3,
-					viewBackgroundv4,
-				]}
-			>
+			<PageBackground imageUrl={getRandomBackground()}>
 				<BrowserRouter>
 					<div className="flex flex-col h-screen w-full text-white items-stretch px-4 py-4">
 						<Navbar />
@@ -30,7 +20,7 @@ function App() {
 						<Footer />
 					</div>
 				</BrowserRouter>
-			</RandomPageBackground>
+			</PageBackground>
 		</div>
 	);
 }
