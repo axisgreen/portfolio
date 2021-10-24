@@ -7,7 +7,7 @@ import "react-typist/dist/Typist.css";
 
 const HomeView: React.FC = () => {
 	return (
-		<div className="ml-10 py-48 my-auto">
+		<div className="md:ml-10 my-auto">
 			<div className="flex flex-col justify-center 3xl:items-center">
 				<ExoTwoFont>
 					<div className="p-0 m-0 text-6xl lg:text-8xl">
