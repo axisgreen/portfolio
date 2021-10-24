@@ -7,8 +7,8 @@ import { ReactComponent as Logo } from "../assets/logo.svg";
 const Navbar: React.FC = () => {
 	return (
 		<div className="flex justify-between 3xl:justify-evenly">
-			<div className="m-2 md:mx-0">
-				<div className="hover:bg-gray-100 px-2 rounded-md shadow-md transition-all">
+			<div className="mx-2 md:mx-0">
+				<div className="hover:bg-gray-100 p-2 rounded-md transition-all">
 					<LogoLink to="/" linkContent="" transition>
 						<Logo width="50px" height="50px" />
 					</LogoLink>

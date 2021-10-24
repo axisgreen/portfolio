@@ -20,7 +20,6 @@ const HomeView: React.FC = () => {
 							cursor={{
 								show: true,
 								blink: true,
-								hideWhenDone: true,
 							}}
 						>
 							&lt;Web
