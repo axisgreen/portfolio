@@ -3,7 +3,7 @@ import pageBackgroundV2 from "../assets/backgrounds/wave-haikei-v2.svg";
 import pageBackgroundV3 from "../assets/backgrounds/wave-haikei-v3.svg";
 import pageBackgroundV4 from "../assets/backgrounds/wave-haikei-v4.svg";
 
-const getRandomBackground = () => {
+const getRandomBackground = (): string => {
 	const backgroundImageList = [
 		pageBackgroundV1,
 		pageBackgroundV2,
