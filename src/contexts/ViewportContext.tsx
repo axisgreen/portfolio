@@ -19,8 +19,8 @@ const ViewportBreakpoints = {
 };
 
 const ViewportProvider: React.FC = ({ children }) => {
-	const [width, setWidth] = useState<number>(0);
-	const [height, setHeight] = useState<number>(0);
+	const [width, setWidth] = useState(0);
+	const [height, setHeight] = useState(0);
 	const updateViewport = () => {
 		setWidth(window.innerWidth);
 		setHeight(window.innerHeight);
