@@ -1,5 +1,4 @@
-import githubIcon from "../assets/icons/github-brands.svg";
-import linkedInIcon from "../assets/icons/linkedin-brands.svg";
+import { Icons } from "../../assets/assets";
 import "./Footer.css";
 const Footer = () => {
 	return (
@@ -12,7 +11,7 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src={githubIcon} alt="Github (@axisgreen)" />
+						<img src={Icons.githubIcon} alt="Github (@axisgreen)" />
 					</a>
 				</div>
 				<div className="icon-tile text-black p-2 hover:bg-black rounded-md transition-all cursor-pointer">
@@ -21,7 +20,10 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src={linkedInIcon} alt="LinkedIn (Haritha Dissanayake)" />
+						<img
+							src={Icons.linkedinIcon}
+							alt="LinkedIn (Haritha Dissanayake)"
+						/>
 					</a>
 				</div>
 			</div>
