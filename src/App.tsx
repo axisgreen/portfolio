@@ -5,6 +5,7 @@ import PageBackground from "./components/common/PageBackground";
 import getRandomBackground from "./helpers/getRandomBackground";
 import { ViewportProvider } from "./contexts/ViewportContext";
 import ProjectView from "./views/ProjectView";
+
 function App() {
 	return (
 		<ViewportProvider>

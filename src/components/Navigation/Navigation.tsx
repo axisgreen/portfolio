@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
 		}
 	}, [width]);
 	return (
-		<div className="flex justify-between 3xl:justify-evenly">
+		<div className="flex justify-between 3xl:justify-evenly text-white p-4">
 			<div className="hover:bg-gray-100 p-2 rounded-md transition-all">
 				<LogoLink to="/" linkContent="" transition>
 					<Logo width="50px" height="50px" />

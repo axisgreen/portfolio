@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 interface Props {
 	title: string;
 	description: string;
+	image: string;
 	link: string;
 }
 
-const Card: React.FC<Props> = ({ title, description, link }) => {
+const Card: React.FC<Props> = ({ title, description, image, link }) => {
 	return (
 		<NavLink exact to={link}>
-			<div className="w-72 h-auto flex flex-col justify-center p-2 m-2 hover:bg-gray-100 text-black transition-all rounded-md border border-black">
+			<div className="w-72 h-auto flex flex-col justify-center p-2 m-2 hover:bg-gray-100 hover:shadow-xl text-black transition-all rounded-md border border-gray-400">
 				<img
 					src="https://via.placeholder.com/250x200"
 					alt="Card Image"
