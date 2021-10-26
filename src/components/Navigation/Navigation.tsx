@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import LogoLink from "../LogoLink";
-import { Logo } from "../../assets/assets";
+import { MyLogo } from "../../assets/assets";
 import "./Navigation.css";
 import {
 	ViewportBreakpoints,
@@ -22,10 +22,10 @@ const Navigation: React.FC = () => {
 		}
 	}, [width]);
 	return (
-		<div className="flex justify-between 3xl:justify-evenly text-white p-4">
+		<div className="flex justify-between 3xl:justify-evenly text-white">
 			<div className="hover:bg-gray-100 p-2 rounded-md transition-all">
 				<LogoLink to="/" linkContent="" transition>
-					<Logo width="50px" height="50px" />
+					<MyLogo width="50px" height="50px" />
 				</LogoLink>
 			</div>
 			{navbarType === "bar" ? <Bar /> : <Drawer />}
