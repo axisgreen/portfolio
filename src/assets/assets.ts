@@ -23,8 +23,13 @@ import waveV2 from "./backgrounds/wave-haikei-v2.svg";
 import waveV3 from "./backgrounds/wave-haikei-v3.svg";
 import waveV4 from "./backgrounds/wave-haikei-v4.svg";
 
-// Site Logo (Special case)
-import { ReactComponent as Logo } from "./logo.svg";
+// My Logo (special case)
+import { ReactComponent as MyLogo } from "./logo.svg";
+
+// Logos
+import deakinLogo from "./logos/deakin.svg";
+import deakinLaunchpadLogo from "./logos/launchpad.jpg";
+import websolLogo from "./logos/websol.svg";
 
 const Icons = {
 	bootstrapIcon,
@@ -53,4 +58,10 @@ const Backgrounds = {
 	waveV4,
 };
 
-export { Icons, Backgrounds, Logo };
+const Logos = {
+	deakinLogo,
+	deakinLaunchpadLogo,
+	websolLogo,
+};
+
+export { Icons, Backgrounds, Logos, MyLogo };
