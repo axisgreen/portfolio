@@ -10,10 +10,10 @@ interface Props {
 const Card: React.FC<Props> = ({ title, description, image, link }) => {
 	return (
 		<NavLink exact to={link}>
-			<div className="w-72 h-auto flex flex-col justify-center p-2 m-2 hover:bg-gray-100 hover:shadow-xl text-black transition-all rounded-md border border-gray-400">
+			<div className="w-72 h-auto flex flex-col justify-center p-2 m-2 hover:bg-white  hover:shadow-xl hover:text-black transition-all rounded-md border">
 				<img
 					src="https://via.placeholder.com/250x200"
-					alt="Card Image"
+					alt="Card"
 					className="rounded-md"
 				/>
 				<div className="text-xl font-semibold mt-4 mb-2">Card Title</div>

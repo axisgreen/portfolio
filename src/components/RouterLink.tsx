@@ -16,7 +16,7 @@ const RouterLink: React.FC<Props> = ({ to, linkText, transition }) => {
 			activeClassName="bg-gray-100 text-black"
 			exact
 			to={to}
-			className={`font-medium hover:bg-gray-100 hover:text-black p-3 m-1 rounded-md ${
+			className={`font-medium hover:bg-white hover:text-black p-3 m-1 rounded-md ${
 				transition ? "transition-all" : ""
 			}`}
 		>
