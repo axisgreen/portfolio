@@ -1,0 +1,22 @@
+.animated-overflow-enter {
+	max-height: 0;
+	overflow: hidden;
+}
+.animated-overflow-enter-active {
+	max-height: 42rem;
+	overflow: visible;
+	transition: max-height 300ms, overflow 300ms;
+	-webkit-transition: max-height 300ms, overflow 300ms;
+	-moz-transition: max-height 300ms, overflow 300ms;
+}
+.animated-overflow-exit {
+	max-height: 42rem;
+	overflow: visible;
+}
+.animated-overflow-exit-active {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 300ms, overflow 300ms;
+	-webkit-transition: max-height 300ms, overflow 300ms;
+	-moz-transition: max-height 300ms, overflow 300ms;
+}
