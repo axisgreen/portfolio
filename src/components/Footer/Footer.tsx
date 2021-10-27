@@ -7,6 +7,15 @@ const Footer = () => {
 			<div className="flex 2xl:justify-center gap-1 2xl:my-1">
 				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
 					<a
+						href="mailto:professional@email.com"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img src={Icons.mailIcon} alt="Email (Haritha Dissanayake)" />
+					</a>
+				</div>
+				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
+					<a
 						href="https://github.com/axisgreen"
 						target="_blank"
 						rel="noreferrer"
@@ -28,7 +37,9 @@ const Footer = () => {
 				</div>
 			</div>
 			{/* Attribution */}
-			<div className="my-auto">&copy; Haritha Dissanayake 2021</div>
+			<div className="my-auto text-sm sm:text-base">
+				&copy; Haritha Dissanayake 2021
+			</div>
 		</div>
 	);
 };
