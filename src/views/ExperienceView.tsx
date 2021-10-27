@@ -10,9 +10,9 @@ const ExperienceView: React.FC = () => {
 			<Navigation />
 			<div className="flex flex-col flex-1 gap-8">
 				<div className="flex justify-center">
-					<div className="text-5xl font-semibold">Experience</div>
+					<div className="text-4xl sm:text-5xl font-semibold">Experience</div>
 				</div>
-				<div className="mx-auto mb-4 xl:mb-0">
+				<div className="mx-auto mb-4 ">
 					<div className="flex flex-wrap bg-gray-800 shadow-xl rounded-md py-10 md:px-16 md:mx-16 justify-center">
 						<div className="p-4 rounded-md">
 							<JobAccordion

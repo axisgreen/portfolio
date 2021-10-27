@@ -14,11 +14,11 @@ const HomeView: React.FC = () => {
 			<div className="md:ml-10 my-auto">
 				<div className="flex flex-col justify-center 3xl:items-center">
 					<ExoTwoFont>
-						<div className="p-0 m-0 text-6xl lg:text-8xl">
+						<div className="p-0 m-0 text-5xl sm:text-6xl lg:text-8xl">
 							Haritha Dissanayake
 						</div>
 					</ExoTwoFont>
-					<div className="mx-1 py-4 text-2xl lg:text-4xl font-mono ">
+					<div className="mx-1 py-4 text-xl sm:text-2xl lg:text-4xl font-mono ">
 						<div className="flex">
 							<Typist
 								cursor={{
