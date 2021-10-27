@@ -1,0 +1,8 @@
+.chevron-right {
+	filter: invert(1);
+}
+
+/* "parent" class = first element of JobTile that reacts to hover */
+.parent:hover .chevron-right {
+	filter: none;
+}
