@@ -16,6 +16,8 @@ import tsIcon from "./icons/typescriptlang-icon.svg";
 import jsIcon from "./icons/javascript-icon.svg";
 import linkedinIcon from "./icons/linkedin-brands.svg";
 import closeIcon from "./icons/close-icon.svg";
+import chevronRight from "./icons/chevron-right.svg";
+import mailIcon from "./icons/mail-icon.svg";
 
 // Backgrounds
 import waveV1 from "./backgrounds/wave-haikei-v1.svg";
@@ -49,6 +51,8 @@ const Icons = {
 	jsIcon,
 	linkedinIcon,
 	closeIcon,
+	chevronRight,
+	mailIcon,
 };
 
 const Backgrounds = {
