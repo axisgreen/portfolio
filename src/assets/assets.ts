@@ -33,6 +33,9 @@ import deakinLogo from "./logos/deakin.svg";
 import deakinLaunchpadLogo from "./logos/launchpad.jpg";
 import websolLogo from "./logos/websol.svg";
 
+// Other assets
+import iphone from "./iphone-x.svg";
+
 const Icons = {
 	bootstrapIcon,
 	djangoIcon,
@@ -68,4 +71,8 @@ const Logos = {
 	websolLogo,
 };
 
-export { Icons, Backgrounds, Logos, MyLogo };
+const OtherAssets = {
+	iphone,
+};
+
+export { Icons, Backgrounds, Logos, MyLogo, OtherAssets };
