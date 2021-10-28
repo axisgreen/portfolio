@@ -7,6 +7,7 @@ import { ViewportProvider } from "./contexts/ViewportContext";
 import ProjectView from "./views/ProjectView";
 import AboutView from "./views/AboutView";
 import ExperienceView from "./views/ExperienceView";
+import ProjectDetailView from "./views/ProjectDetailView";
 
 function App() {
 	return (
@@ -22,6 +23,9 @@ function App() {
 						</Route>
 						<Route exact path="/projects">
 							<ProjectView />
+						</Route>
+						<Route exact path="/project/:id">
+							<ProjectDetailView />
 						</Route>
 						<Route exact path="/experience">
 							<ExperienceView />
