@@ -4,8 +4,8 @@ import SecondaryButton from "../components/common/SecondaryButton";
 import ExoTwoFont from "../components/fonts/ExoTwoFont";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import Navigation from "../components/Navigation/Navigation";
-import Footer from "../components/Footer/Footer";
+import Navigation from "../components/layout/Navigation/Navigation";
+import Footer from "../components/layout/Footer/Footer";
 
 const HomeView: React.FC = () => {
 	return (

@@ -1,6 +1,6 @@
 import Card from "../components/common/Card";
-import Footer from "../components/Footer/Footer";
-import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/layout/Footer/Footer";
+import Navigation from "../components//layout/Navigation/Navigation";
 
 const ProjectView: React.FC = () => {
 	return (
@@ -11,10 +11,12 @@ const ProjectView: React.FC = () => {
 					<div className="text-4xl sm:text-5xl font-semibold">Projects</div>
 				</div>
 				<div className="mx-auto mb-4 xl:mb-0">
-					<div className="flex flex-wrap bg-gray-800 shadow-xl rounded-md py-14 md:px-16 md:mx-16 justify-center">
-						<Card title="" description="" image="" link="/card" />
-						<Card title="" description="" image="" link="/card" />
-						<Card title="" description="" image="" link="/card" />
+					<div className="flex flex-col flex-wrap bg-gray-800 shadow-xl rounded-md py-14 md:px-16 md:mx-16">
+						<Card title="" description="" image="" link="/project/detail" />
+						<Card title="" description="" image="" link="/project/detail" />
+						<Card title="" description="" image="" link="/project/detail" />
+						<Card title="" description="" image="" link="/project/detail" />
+						<Card title="" description="" image="" link="/project/detail" />
 					</div>
 				</div>
 			</div>

@@ -1,8 +1,8 @@
 import { Logos } from "../assets/assets";
 import JobTile from "../components/common/JobTile";
 import Spacer from "../components/common/Spacer";
-import Footer from "../components/Footer/Footer";
-import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/layout/Footer/Footer";
+import Navigation from "../components/layout/Navigation/Navigation";
 
 const ExperienceView: React.FC = () => {
 	return (

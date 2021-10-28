@@ -1,5 +1,5 @@
-import Footer from "../components/Footer/Footer";
-import Navigation from "../components/Navigation/Navigation";
+import Footer from "../components/layout/Footer/Footer";
+import Navigation from "../components/layout/Navigation/Navigation";
 
 const AboutView: React.FC = () => {
 	return (
