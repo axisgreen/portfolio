@@ -9,7 +9,7 @@ const PrimaryButton: React.FC<Props> = ({ buttonText, onClick }: Props) => {
 	// bg-gradient-to-l from-green-500 to-blue-500
 	return (
 		<button
-			className="bg-green-500 p-3 rounded-sm hover:shadow-md text-white font-medium transition-all hover:bg-green-600"
+			className="bg-green-500 p-3 rounded-md hover:shadow-md text-white font-medium transition-all hover:bg-green-600"
 			onClick={onClick}
 		>
 			{buttonText}
