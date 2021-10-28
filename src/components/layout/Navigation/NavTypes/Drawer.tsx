@@ -1,6 +1,6 @@
 import React, { createRef, useEffect, useState } from "react";
-import { Icons } from "../../../assets/assets";
-import RouterLink from "../../RouterLink";
+import { Icons } from "../../../../assets/assets";
+import RouterLink from "../../../RouterLink";
 
 const Drawer: React.FC = () => {
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);

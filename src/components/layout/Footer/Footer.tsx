@@ -1,4 +1,4 @@
-import { Icons } from "../../assets/assets";
+import { Icons } from "../../../assets/assets";
 import "./Footer.css";
 const Footer = () => {
 	return (

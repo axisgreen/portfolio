@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
-import LogoLink from "../LogoLink";
-import { MyLogo } from "../../assets/assets";
+import LogoLink from "../../LogoLink";
+import { MyLogo } from "../../../assets/assets";
 import "./Navigation.css";
 import {
 	ViewportBreakpoints,
 	ViewportContext,
-} from "../../contexts/ViewportContext";
+} from "../../../contexts/ViewportContext";
 import Drawer from "./NavTypes/Drawer";
 import Bar from "./NavTypes/Bar";
 

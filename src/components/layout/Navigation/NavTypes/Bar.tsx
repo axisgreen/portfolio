@@ -1,5 +1,5 @@
-import PrimaryButton from "../../common/PrimaryButton";
-import RouterLink from "../../RouterLink";
+import PrimaryButton from "../../../common/PrimaryButton";
+import RouterLink from "../../../RouterLink";
 
 const Bar: React.FC = () => {
 	return (
