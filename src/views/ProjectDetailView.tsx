@@ -1,18 +1,22 @@
-import { Icons, OtherAssets } from "../assets/assets";
+import { useContext, useState } from "react";
+import { Icons } from "../assets/assets";
 import PrimaryButton from "../components/common/PrimaryButton";
 import TechBadge from "../components/common/TechBadge";
-import Footer from "../components/layout/Footer/Footer";
-import Navigation from "../components/layout/Navigation/Navigation";
+import MobileShowcaseCarousel from "../components/view/ProjectDetailView/MobileShowcaseCarousel";
+import WebShowcaseCarousel from "../components/view/ProjectDetailView/WebShowcaseCarousel";
+import { ViewportContext } from "../contexts/ViewportContext";
 
 const ProjectDetailView: React.FC = () => {
 	const { height } = useContext(ViewportContext);
 	// Sets the min height for the project info tile if the screen is taller than convention
 	const minHeightForTallScreens =
 		height > 1080 ? "sm:min-h-63v" : "sm:min-h-80v";
+
+	const [projectType, setProjectType] = useState<"mobile" | "web">("web");
 	return (
 		<div className="flex flex-1 flex-col-reverse lg:flex-row justify-center gap-8 3xl:gap-16 my-4 xl:mx-0 text-white">
 			<div
-				className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center ${minHeightForTallScreens}  max-h-80v 3xl:min-h-63v 3xl:max-h-63v my-auto`}
+				className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center ${minHeightForTallScreens} max-h-80v 3xl:min-h-63v 3xl:max-h-63v my-auto`}
 			>
 				<div className="lg:max-w-sm max-h-96">
 					<div className="flex flex-col gap-4 py-10 px-10 md:px-0">
@@ -50,16 +54,12 @@ const ProjectDetailView: React.FC = () => {
 					</div>
 				</div>
 			</div>
-				<div className="flex justify-center items-center">
-					<img
-						src={OtherAssets.iphone}
-						alt="Mobile View"
-						style={{
-							minHeight: "40rem",
-							maxHeight: "75vh",
-							minWidth: "fit-content",
-						}}
-					/>
+			<div className="flex justify-center items-center">
+				{projectType === "mobile" ? (
+					<MobileShowcaseCarousel />
+				) : (
+					<WebShowcaseCarousel />
+				)}
 			</div>
 		</div>
 	);
