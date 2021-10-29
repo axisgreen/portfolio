@@ -35,6 +35,7 @@ import websolLogo from "./logos/websol.svg";
 
 // Other assets
 import iphone from "./iphone-x.svg";
+import monitor from "./monitor.svg";
 
 const Icons = {
 	bootstrapIcon,
@@ -73,6 +74,7 @@ const Logos = {
 
 const OtherAssets = {
 	iphone,
+	monitor,
 };
 
 export { Icons, Backgrounds, Logos, MyLogo, OtherAssets };
