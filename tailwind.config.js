@@ -6,6 +6,24 @@ module.exports = {
 			screens: {
 				"3xl": "1920px",
 			},
+			minHeight: {
+				"25v": "25vh",
+				"50v": "50vh",
+				"63v": "63vh",
+				"64v": "64vh",
+				"65v": "65vh",
+				"75v": "75vh",
+				"80v": "80vh",
+			},
+			maxHeight: {
+				"25v": "25vh",
+				"50v": "50vh",
+				"63v": "63vh",
+				"64v": "64vh",
+				"65v": "65vh",
+				"75v": "75vh",
+				"80v": "80vh",
+			},
 		},
 	},
 	variants: {
