@@ -8,29 +8,35 @@ import ProjectView from "./views/ProjectView";
 import AboutView from "./views/AboutView";
 import ExperienceView from "./views/ExperienceView";
 import ProjectDetailView from "./views/ProjectDetailView";
+import Navigation from "./components/layout/Navigation/Navigation";
+import Footer from "./components/layout/Footer/Footer";
 
 function App() {
 	return (
 		<ViewportProvider>
 			<PageBackground imageUrl={getRandomBackground()}>
 				<BrowserRouter>
-					<Switch>
-						<Route exact path="/">
-							<HomeView />
-						</Route>
-						<Route exact path="/about">
-							<AboutView />
-						</Route>
-						<Route exact path="/projects">
-							<ProjectView />
-						</Route>
-						<Route exact path="/project/:id">
-							<ProjectDetailView />
-						</Route>
-						<Route exact path="/experience">
-							<ExperienceView />
-						</Route>
-					</Switch>
+					<div className="p-4 flex flex-col min-h-screen">
+						<Navigation />
+						<Switch>
+							<Route exact path="/">
+								<HomeView />
+							</Route>
+							<Route exact path="/about">
+								<AboutView />
+							</Route>
+							<Route exact path="/projects">
+								<ProjectView />
+							</Route>
+							<Route exact path="/projects/:id">
+								<ProjectDetailView />
+							</Route>
+							<Route exact path="/experience">
+								<ExperienceView />
+							</Route>
+						</Switch>
+						<Footer />
+					</div>
 				</BrowserRouter>
 			</PageBackground>
 		</ViewportProvider>

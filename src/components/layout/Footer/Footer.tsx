@@ -2,7 +2,7 @@ import { Icons } from "../../../assets/assets";
 import "./Footer.css";
 const Footer = () => {
 	return (
-		<div className="flex flex-row-reverse justify-between 3xl:inline 3xl:mx-auto">
+		<div className="flex flex-row-reverse justify-between 3xl:inline 3xl:mx-auto text-white">
 			{/* Socials Cluster */}
 			<div className="flex 2xl:justify-center gap-1 2xl:my-1">
 				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
