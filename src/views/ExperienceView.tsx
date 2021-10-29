@@ -1,5 +1,5 @@
 import { Logos } from "../assets/assets";
-import JobTile from "../components/common/JobTile";
+import JobExpandable from "../components/common/JobExpandable";
 import Spacer from "../components/common/Spacer";
 
 const ExperienceView: React.FC = () => {
@@ -11,7 +11,7 @@ const ExperienceView: React.FC = () => {
 			<div className="mx-auto mb-4 ">
 				<div className="flex flex-wrap bg-gray-800 shadow-xl rounded-md py-10 md:px-16 md:mx-16 justify-center">
 					<div className="p-4 rounded-md">
-						<JobTile
+						<JobExpandable
 							jobTitle="Software Engineer Intern/Application Developer"
 							companyName="Deakin Launchpad, Burwood, Melbourne"
 							companyLogo={Logos.deakinLaunchpadLogo}
@@ -48,7 +48,7 @@ const ExperienceView: React.FC = () => {
 							}
 						/>
 						<Spacer />
-						<JobTile
+						<JobExpandable
 							jobTitle="Full-stack Developer (Freelancer)"
 							companyName="Websol Technologies, Clayton, Melbourne"
 							companyLogo={Logos.websolLogo}
@@ -76,7 +76,7 @@ const ExperienceView: React.FC = () => {
 							}
 						/>
 						<Spacer />
-						<JobTile
+						<JobExpandable
 							jobTitle="Writing Mentor (Learning Support Hub)"
 							companyName="Deakin University, Burwood, Melbourne"
 							companyLogo={Logos.deakinLogo}

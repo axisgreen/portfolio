@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Icons } from "../../assets/assets";
 import AnimatedOverflow from "../transitions/AnimatedOverflow";
 import Rotate90 from "../animations/Rotate90";
-import "./JobTile.css";
+import "./JobExpandable.css";
 
 interface Props {
 	jobTitle: string;
@@ -14,7 +14,7 @@ interface Props {
 	mountExpanded?: boolean;
 }
 
-const JobTile: React.FC<Props> = ({
+const JobExpandable: React.FC<Props> = ({
 	jobTitle,
 	companyName,
 	companyLogo,
@@ -72,4 +72,4 @@ const JobTile: React.FC<Props> = ({
 	);
 };
 
-export default JobTile;
+export default JobExpandable;
