@@ -12,7 +12,7 @@ const SecondaryButton: React.FC<Props> = ({
 }) => {
 	return (
 		<button
-			className="border border-green-500 text-green-500 p-3 rounded-md hover:shadow-md font-medium hover:bg-green-500 hover:border-green-500 hover:text-white transition-all"
+			className="border p-3 rounded-md hover:shadow-md font-medium hover:bg-white hover:text-black transition-all"
 			onClick={onClick}
 		>
 			<div className="flex gap-2 justify-center items-center">
