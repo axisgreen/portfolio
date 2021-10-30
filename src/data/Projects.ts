@@ -1,3 +1,5 @@
+import { Icons } from "../assets/assets";
+
 type Technology = {
 	tooltip:
 		| "Flutter"
@@ -34,10 +36,46 @@ interface Project {
 
 const Projects: Project[] = [
 	{
+		id: "test",
+		projectName: "Test Project",
+		projectDescription: `Project Description - Lorem ipsum dolor sit amet consectetur
+		adipisicing elit. Nihil reiciendis ratione maxime doloribus
+		laborum. Incidunt minima quam in optio quas a laborum illo cumque
+		nesciunt, quis consequatur id, sed doloremque! Lorem ipsum dolor
+		sit amet, consectetur adipisicing elit. Incidunt voluptates
+		aspernatur maxime, consequuntur optio ratione adipisci commodi
+		labore eaque, ea doloribus explicabo molestiae repellat aut
+		possimus cum eveniet. Consectetur, voluptatem. Lorem ipsum dolor
+		sit amet consectetur adipisicing elit. Nihil reiciendis ratione
+		maxime doloribus laborum. Incidunt minima quam in optio quas a
+		laborum illo cumque nesciunt, quis consequatur id, sed doloremque!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+		voluptates aspernatur maxime, consequuntur optio ratione adipisci
+		commodi labore eaque, ea doloribus explicabo molestiae repellat
+		aut possimus cum eveniet. Consectetur, voluptatem.`,
+		technologiesUsed: [
+			{ tooltip: "MongoDB", icon: Icons.mongodbIcon },
+			{ tooltip: "ExpressJS", icon: Icons.expressIcon },
+			{ tooltip: "ReactJS", icon: Icons.reactIcon },
+			{
+				tooltip: "NodeJS",
+				icon: Icons.nodejsIcon,
+			},
+			{ tooltip: "TypeScript", icon: Icons.tsIcon },
+		],
+		projectTarget: "web",
+		media: [],
+		thumbnail: "",
+		relatedWorkExperience: "",
+		liveDemoLink: "nolink.linkom",
+		isOpenSource: true,
+		openSourceRepo: "https://github.com/axisgreen",
+	},
+	{
 		id: "aims",
 		projectName: "AIMS (Agent Information Management System)",
 		projectDescription: "desc",
-		technologiesUsed: [{ tooltip: "Flutter", icon: "./someicon.svg" }],
+		technologiesUsed: [{ tooltip: "Flutter", icon: Icons.flutterIcon }],
 		projectTarget: "mobile",
 		media: ["screenshot.jpg", "video.gif"],
 		thumbnail: "thumbnail.jpg",
@@ -48,4 +86,5 @@ const Projects: Project[] = [
 	},
 ];
 
+export interface IProject extends Project {}
 export default Projects;
