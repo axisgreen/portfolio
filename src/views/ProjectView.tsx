@@ -1,4 +1,5 @@
 import Card from "../components/common/Card";
+import Projects from "../data/Projects";
 
 const ProjectView: React.FC = () => {
 	return (
@@ -8,11 +9,16 @@ const ProjectView: React.FC = () => {
 			</div>
 			<div className="mx-auto mb-4 xl:mb-0">
 				<div className="flex flex-col flex-wrap bg-gray-800 shadow-xl rounded-md py-14 md:px-16 md:mx-16">
-					<Card title="" description="" image="" link="/projects/detail" />
-					<Card title="" description="" image="" link="/projects/detail" />
-					<Card title="" description="" image="" link="/projects/detail" />
-					<Card title="" description="" image="" link="/projects/detail" />
-					<Card title="" description="" image="" link="/projects/detail" />
+					{Projects.map((project, i) => {
+						return (
+							<Card
+								title={project.projectName}
+								description={project.projectDescription}
+								image={project.thumbnail}
+								link={`/projects/${project.id}`}
+							/>
+						);
+					})}
 				</div>
 			</div>
 		</div>
