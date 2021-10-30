@@ -28,7 +28,7 @@ function App() {
 							<Route exact path="/projects">
 								<ProjectView />
 							</Route>
-							<Route exact path="/projects/:id">
+							<Route exact path="/projects/:projectId">
 								<ProjectDetailView />
 							</Route>
 							<Route exact path="/experience">
