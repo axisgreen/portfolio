@@ -17,7 +17,10 @@ import jsIcon from "./icons/javascript-icon.svg";
 import linkedinIcon from "./icons/linkedin-brands.svg";
 import closeIcon from "./icons/close-icon.svg";
 import chevronRight from "./icons/chevron-right.svg";
+import chevronLeft from "./icons/chevron-left.svg";
+
 import mailIcon from "./icons/mail-icon.svg";
+import eyeIcon from "./icons/eye.svg";
 
 // Backgrounds
 import waveV1 from "./backgrounds/wave-haikei-v1.svg";
@@ -57,6 +60,8 @@ const Icons = {
 	closeIcon,
 	chevronRight,
 	mailIcon,
+	eyeIcon,
+	chevronLeft,
 };
 
 const Backgrounds = {
