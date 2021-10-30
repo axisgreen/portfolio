@@ -3,7 +3,7 @@ import { OtherAssets } from "../../../assets/assets";
 
 const WebShowcaseCarousel: React.FC = () => {
 	return (
-		<div>
+		<div className="flex justify-center items-center">
 			<img
 				src={OtherAssets.monitor}
 				alt="Web View"
