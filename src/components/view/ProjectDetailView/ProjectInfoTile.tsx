@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useContext } from "react";
 import { Icons } from "../../../assets/assets";
 import { ViewportContext } from "../../../contexts/ViewportContext";
@@ -18,7 +19,14 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 		height > 1080 ? "sm:min-h-63v" : "sm:min-h-80v";
 
 	return (
-		<div
+		<motion.div
+			initial={{ translateY: 40, opacity: 0 }}
+			animate={{
+				translateY: 0,
+				opacity: 1,
+				animationFillMode: "both",
+			}}
+			transition={{ duration: 0.4, delay: 0.2, staggerChildren: 0.5 }}
 			className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center ${minHeightForTallScreens} max-h-80v 3xl:min-h-63v 3xl:max-h-63v my-auto`}
 		>
 			<div className="lg:max-w-sm max-h-96">
@@ -35,9 +43,11 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 							);
 						})}
 					</div>
+
 					<div className="p-4 border rounded-md hover:bg-white hover:text-black transition-all">
 						Related to Work Experience
 					</div>
+
 					<div>{project.projectDescription}</div>
 
 					<PrimaryButton
@@ -54,7 +64,7 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 					)}
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
