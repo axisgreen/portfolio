@@ -10,7 +10,7 @@ interface Props {
 	companyLogo: string;
 	jobStartDate: string;
 	jobEndDate: string;
-	details: JSX.Element;
+	details: string[];
 	mountExpanded?: boolean;
 }
 
@@ -65,7 +65,11 @@ const JobExpandable: React.FC<Props> = ({
 				</div>
 
 				<AnimatedOverflow trigger={showDetails} timeout={300}>
-					<div className="px-4">{details}</div>
+					<div className="px-4">
+						{details.map((detail, i) => {
+							return <li key={i}>{detail}</li>;
+						})}
+					</div>
 				</AnimatedOverflow>
 			</div>
 		</div>
