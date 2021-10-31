@@ -1,8 +1,7 @@
 import "./App.css";
 import HomeView from "./views/HomeView";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import PageBackground from "./components/common/PageBackground";
-import getRandomBackground from "./helpers/getRandomBackground";
 import { ViewportProvider } from "./contexts/ViewportContext";
 import ProjectView from "./views/ProjectView";
 import AboutView from "./views/AboutView";
@@ -10,15 +9,18 @@ import ExperienceView from "./views/ExperienceView";
 import ProjectDetailView from "./views/ProjectDetailView";
 import Navigation from "./components/layout/Navigation/Navigation";
 import Footer from "./components/layout/Footer/Footer";
+import { AnimatePresence } from "framer-motion";
+import { Backgrounds } from "./assets/assets";
 
 function App() {
+	const location = useLocation();
 	return (
 		<ViewportProvider>
-			<PageBackground imageUrl={getRandomBackground()}>
-				<BrowserRouter>
-					<div className="p-4 flex flex-col min-h-screen">
-						<Navigation />
-						<Switch>
+			<PageBackground imageUrl={Backgrounds.waveV1}>
+				<div className="p-4 flex flex-col min-h-screen">
+					<Navigation />
+					<AnimatePresence exitBeforeEnter>
+						<Switch location={location} key={location.key}>
 							<Route exact path="/">
 								<HomeView />
 							</Route>
@@ -35,9 +37,9 @@ function App() {
 								<ExperienceView />
 							</Route>
 						</Switch>
-						<Footer />
-					</div>
-				</BrowserRouter>
+					</AnimatePresence>
+					<Footer />
+				</div>
 			</PageBackground>
 		</ViewportProvider>
 	);
