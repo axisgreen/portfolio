@@ -16,7 +16,14 @@ const SecondaryButton: React.FC<Props> = ({
 			onClick={onClick}
 		>
 			<div className="flex gap-2 justify-center items-center">
-				{buttonIcon && <img src={buttonIcon} width="20px" height="20px" />}
+				{buttonIcon && (
+					<img
+						src={buttonIcon}
+						width="20px"
+						height="20px"
+						alt="Secondary Button"
+					/>
+				)}
 				{buttonText}
 			</div>
 		</button>

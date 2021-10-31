@@ -21,6 +21,7 @@ const ViewSourceButton: React.FC<Props> = ({
 						width="20px"
 						height="20px"
 						className="filter invert"
+						alt="View Source Button"
 					/>
 				)}
 				{buttonText}

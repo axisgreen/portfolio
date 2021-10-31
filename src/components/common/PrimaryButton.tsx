@@ -12,7 +12,6 @@ const PrimaryButton: React.FC<Props> = ({
 	buttonIcon,
 	onClick,
 }: Props) => {
-	// bg-gradient-to-l from-green-500 to-blue-500
 	return (
 		<button
 			className="bg-green-500 p-3 rounded-md hover:shadow-md text-white font-medium transition-all hover:bg-green-600"
@@ -25,6 +24,7 @@ const PrimaryButton: React.FC<Props> = ({
 						width="20px"
 						height="20px"
 						className="filter invert"
+						alt="Primary Button"
 					/>
 				)}
 				{buttonText}
