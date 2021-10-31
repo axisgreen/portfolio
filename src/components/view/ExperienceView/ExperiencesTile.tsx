@@ -3,7 +3,7 @@ import Experiences from "../../../data/Experiences";
 import JobExpandable from "../../common/JobExpandable";
 import Spacer from "../../common/Spacer";
 
-const ExperiencesTile: React.FC = ({}) => {
+const ExperiencesTile: React.FC = () => {
 	return (
 		<motion.div
 			initial={{ translateY: 40, opacity: 0 }}
