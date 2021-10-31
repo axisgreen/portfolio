@@ -1,13 +1,10 @@
-import { Logos } from "../assets/assets";
-import JobExpandable from "../components/common/JobExpandable";
-import Spacer from "../components/common/Spacer";
+import Heading from "../components/common/Heading";
 
 const ExperienceView: React.FC = () => {
 	return (
 		<div className="flex flex-col flex-1 gap-8 text-white">
 			<div className="flex justify-center">
-				<div className="text-4xl sm:text-5xl font-semibold">Experience</div>
-			</div>
+					<Heading variant="page">Experience</Heading>
 			<div className="mx-auto mb-4 ">
 				<div className="flex flex-wrap bg-gray-800 shadow-xl rounded-md py-10 md:px-16 md:mx-16 justify-center">
 					<div className="p-4 rounded-md">
