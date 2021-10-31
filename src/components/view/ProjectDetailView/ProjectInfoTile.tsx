@@ -11,7 +11,7 @@ interface Props {
 	project: IProject;
 }
 
-const ProjectTile: React.FC<Props> = ({ project }) => {
+const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 	const { height } = useContext(ViewportContext);
 	// Sets the min height for the project info tile if the screen is taller than convention
 	const minHeightForTallScreens =
@@ -58,4 +58,4 @@ const ProjectTile: React.FC<Props> = ({ project }) => {
 	);
 };
 
-export default ProjectTile;
+export default ProjectInfoTile;
