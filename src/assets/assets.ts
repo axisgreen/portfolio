@@ -18,6 +18,14 @@ import linkedinIcon from "./icons/linkedin-brands.svg";
 import closeIcon from "./icons/close-icon.svg";
 import chevronRight from "./icons/chevron-right.svg";
 import chevronLeft from "./icons/chevron-left.svg";
+import jqueryIcon from "./icons/jquery-icon.svg";
+import awsIcon from "./icons/aws-icon.svg";
+import gcpIcon from "./icons/gcp-icon.svg";
+import digitaloceanIcon from "./icons/digitalocean-icon.svg";
+import vuejsIcon from "./icons/vuejs-icon.svg";
+import dartIcon from "./icons/dartlang-icon.svg";
+import stripeIcon from "./icons/stripe-icon.svg";
+import herokuIcon from "./icons/heroku-icon.svg";
 
 import mailIcon from "./icons/mail-icon.svg";
 import eyeIcon from "./icons/eye.svg";
@@ -62,6 +70,14 @@ const Icons = {
 	mailIcon,
 	eyeIcon,
 	chevronLeft,
+	jqueryIcon,
+	awsIcon,
+	gcpIcon,
+	digitaloceanIcon,
+	vuejsIcon,
+	dartIcon,
+	stripeIcon,
+	herokuIcon,
 };
 
 const Backgrounds = {
