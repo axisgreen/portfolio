@@ -1,7 +1,9 @@
+import Fade from "../components/transitions/PageFade";
 import Heading from "../components/common/Heading";
 
 const ProjectView: React.FC = () => {
 	return (
+		<Fade>
 		<div className="flex flex-col flex-1 gap-8 text-white">
 			<div className="flex justify-center">
 					<Heading variant="page">Projects</Heading>
@@ -20,6 +22,7 @@ const ProjectView: React.FC = () => {
 				</div>
 			</div>
 		</div>
+		</Fade>
 	);
 };
 
