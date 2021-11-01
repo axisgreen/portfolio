@@ -35,24 +35,53 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 					<Heading variant="section">{project.projectName}</Heading>
 					<TechUsedGroup technologiesUsed={project.technologiesUsed} />
 
-					<div className="p-4 border rounded-md hover:bg-white hover:text-black transition-all">
-						Related to Work Experience
-					</div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{
+							opacity: 1,
+						}}
+						transition={{ delay: 0.4 }}
+					>
+						<div className="p-4 border rounded-md hover:bg-white hover:text-black transition-all">
+							Related to Work Experience
+						</div>
+					</motion.div>
 
-					<div>{project.projectDescription}</div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.6 }}
+					>
+						<div>{project.projectDescription}</div>
+					</motion.div>
 
-					<PrimaryButton
-						buttonText="Live Demo"
-						buttonIcon={Icons.eyeIcon}
-						onClick={() => openUrlInNewTab(project.liveDemoLink)}
-					/>
-					{project.isOpenSource && (
-						<ViewSourceButton
-							buttonText="View Source"
-							buttonIcon={Icons.githubIcon}
-							onClick={() => openUrlInNewTab(project.openSourceRepo)}
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 0.8 }}
+						className="w-full"
+					>
+						<PrimaryButton
+							buttonText="Live Demo"
+							buttonIcon={Icons.eyeIcon}
+							fullWidth
+							onClick={() => openUrlInNewTab(project.liveDemoLink)}
 						/>
-					)}
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ delay: 1 }}
+					>
+						{project.isOpenSource && (
+							<ViewSourceButton
+								buttonText="View Source"
+								buttonIcon={Icons.githubIcon}
+								fullWidth
+								onClick={() => openUrlInNewTab(project.openSourceRepo)}
+							/>
+						)}
+					</motion.div>
 				</div>
 			</div>
 		</motion.div>
