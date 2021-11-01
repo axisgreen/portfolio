@@ -12,7 +12,7 @@ const ExperiencesTile: React.FC = () => {
 				opacity: 1,
 			}}
 			transition={{ delay: 0.2 }}
-			className="flex flex-wrap bg-gray-800 shadow-xl rounded-md py-10 md:px-16 md:mx-16 justify-center"
+			className="flex flex-wrap bg-gray-800 shadow-xl rounded-md px-4 py-10 md:px-16 md:mx-16 justify-center"
 		>
 			<div>
 				{Experiences.map((experience, i) => {
