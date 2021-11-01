@@ -4,9 +4,10 @@ import { Icons } from "../../../assets/assets";
 import { ViewportContext } from "../../../contexts/ViewportContext";
 import { IProject } from "../../../data/Projects";
 import openUrlInNewTab from "../../../helpers/openUrlInNewTab";
+import Heading from "../../common/Heading";
 import PrimaryButton from "../../common/PrimaryButton";
-import TechBadge from "../../common/TechBadge";
 import ViewSourceButton from "../../common/ViewSourceButton";
+import TechUsedGroup from "./TechUsedGroup";
 
 interface Props {
 	project: IProject;
@@ -26,23 +27,13 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 				opacity: 1,
 				animationFillMode: "both",
 			}}
-			transition={{ duration: 0.4, delay: 0.2, staggerChildren: 0.5 }}
+			transition={{ duration: 0.4, delay: 0.2 }}
 			className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center ${minHeightForTallScreens} max-h-80v 3xl:min-h-63v 3xl:max-h-63v my-auto`}
 		>
 			<div className="lg:max-w-sm max-h-96">
 				<div className="flex flex-col gap-4 py-10 px-10 md:px-0">
-					<div className="text-3xl font-semibold">{project.projectName}</div>
-					<div className="flex gap-1">
-						{project.technologiesUsed.map((technology, i) => {
-							return (
-								<TechBadge
-									key={i}
-									icon={technology.icon}
-									tooltip={technology.tooltip}
-								/>
-							);
-						})}
-					</div>
+					<Heading variant="section">{project.projectName}</Heading>
+					<TechUsedGroup technologiesUsed={project.technologiesUsed} />
 
 					<div className="p-4 border rounded-md hover:bg-white hover:text-black transition-all">
 						Related to Work Experience
