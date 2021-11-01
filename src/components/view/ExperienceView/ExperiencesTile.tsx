@@ -17,7 +17,14 @@ const ExperiencesTile: React.FC = () => {
 			<div>
 				{Experiences.map((experience, i) => {
 					return (
-						<>
+						<motion.div
+							key={i}
+							initial={{ opacity: 0 }}
+							animate={{
+								opacity: 1,
+							}}
+							transition={{ delay: 0.15 * i }}
+						>
 							<JobExpandable
 								key={i}
 								jobTitle={experience.jobTitle}
@@ -30,7 +37,7 @@ const ExperiencesTile: React.FC = () => {
 							/>
 							{/* Don't put the spacer after the last item */}
 							{Experiences.length - 1 > i && <Spacer />}
-						</>
+						</motion.div>
 					);
 				})}
 			</div>

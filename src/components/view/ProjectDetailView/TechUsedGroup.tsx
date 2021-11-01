@@ -13,6 +13,7 @@ const TechUsedGroup: React.FC<Props> = ({ technologiesUsed }) => {
 			{technologiesUsed.map((technology, i) => {
 				return (
 					<motion.div
+						key={i}
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.15 * i }}

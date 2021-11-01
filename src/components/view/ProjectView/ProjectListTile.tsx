@@ -16,11 +16,12 @@ const ProjectListTile: React.FC = () => {
 			{Projects.map((project, i) => {
 				return (
 					<motion.div
+						key={i}
 						initial={{ opacity: 0 }}
 						animate={{
 							opacity: 1,
 						}}
-						transition={{ delay: 0.2 * i }}
+						transition={{ delay: 0.1 * i }}
 					>
 						<Card
 							key={i}
