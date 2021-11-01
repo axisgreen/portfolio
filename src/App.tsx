@@ -6,19 +6,19 @@ import Footer from "./components/layout/Footer/Footer";
 import { AnimatePresence } from "framer-motion";
 import { Backgrounds } from "./assets/assets";
 import Routes from "./routes/Routes";
+import AppContainer from "./components/common/AppContainer";
 
 function App() {
-	const location = useLocation();
 	return (
 		<ViewportProvider>
 			<PageBackground imageUrl={Backgrounds.waveV1}>
-				<div className="p-4 flex flex-col min-h-screen">
+				<AppContainer>
 					<Navigation />
 					<AnimatePresence exitBeforeEnter>
 						<Routes />
 					</AnimatePresence>
 					<Footer />
-				</div>
+				</AppContainer>
 			</PageBackground>
 		</ViewportProvider>
 	);
