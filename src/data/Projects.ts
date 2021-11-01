@@ -90,7 +90,7 @@ const Projects: Project[] = [
 			{ tooltip: "Bootstrap", icon: Icons.bootstrapIcon },
 			{ tooltip: "JavaScript", icon: Icons.jsIcon },
 		],
-		projectTarget: "mobile",
+		projectTarget: "web",
 		media: ["screenshot.jpg", "video.gif"],
 		thumbnail: "thumbnail.jpg",
 		relatedWorkExperience: "Work Experience",
@@ -183,4 +183,5 @@ const Projects: Project[] = [
 ];
 
 export interface IProject extends Project {}
+export interface ITechnology extends Technology {}
 export default Projects;
