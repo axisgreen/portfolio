@@ -1,3 +1,5 @@
+import { ReactImageGalleryItem } from "react-image-gallery";
+
 // Icons
 import bootstrapIcon from "./icons/bootstrap-icon.svg";
 import djangoIcon from "./icons/djangoproject-icon.svg";
@@ -43,6 +45,20 @@ import { ReactComponent as MyLogo } from "./logo.svg";
 import deakinLogo from "./logos/deakin.svg";
 import deakinLaunchpadLogo from "./logos/launchpad.jpg";
 import websolLogo from "./logos/websol.svg";
+import aimsLogo from "./logos/aims-logo.svg";
+
+// Project Thumbnails
+import aimsThumb from "./projects/thumbnails/aims-thumb.svg";
+import servoThumb from "./projects/thumbnails/servo-thumb.svg";
+import phantomThumb from "./projects/thumbnails/phantom-thumb.svg";
+import measureupThumb from "./projects/thumbnails/measureup-thumb.svg";
+import iserviceThumb from "./projects/thumbnails/iservice-thumb.svg";
+
+// Project Media
+import aims1 from "./projects/aims/1.png";
+import aims2 from "./projects/aims/2.png";
+// import aims1 from './projects/aims/1.png'
+// import aims1 from './projects/aims/1.png'
 
 // Other assets
 import iphone from "./iphone-x.svg";
@@ -91,6 +107,22 @@ const Logos = {
 	deakinLogo,
 	deakinLaunchpadLogo,
 	websolLogo,
+	aimsLogo,
+};
+
+const Thumbnails = {
+	aimsThumb,
+	servoThumb,
+	phantomThumb,
+	measureupThumb,
+	iserviceThumb,
+};
+
+interface IMedia {
+	[project: string]: ReactImageGalleryItem[];
+}
+const Media: IMedia = {
+	aims: [{ original: aims1 }, { original: aims2 }],
 };
 
 const OtherAssets = {
@@ -98,4 +130,4 @@ const OtherAssets = {
 	monitor,
 };
 
-export { Icons, Backgrounds, Logos, MyLogo, OtherAssets };
+export { Icons, Backgrounds, Logos, Thumbnails, Media, MyLogo, OtherAssets };
