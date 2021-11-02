@@ -1,4 +1,5 @@
-import { Icons } from "../assets/assets";
+import { ReactImageGalleryItem } from "react-image-gallery";
+import { Icons, Media, Thumbnails } from "../assets/assets";
 
 type Technology = {
 	tooltip:
@@ -34,7 +35,7 @@ interface Project {
 	projectDescription: string;
 	technologiesUsed: Technology[];
 	projectTarget: ProjectTarget;
-	media: string[];
+	media: ReactImageGalleryItem[];
 	thumbnail: string;
 	relatedWorkExperience: string;
 	liveDemoLink: string;
@@ -72,7 +73,7 @@ const Projects: Project[] = [
 			{ tooltip: "TypeScript", icon: Icons.tsIcon },
 		],
 		projectTarget: "web",
-		media: [],
+		media: [{ original: "https://via.placeholder.com/250x200" }],
 		thumbnail: "",
 		relatedWorkExperience: "",
 		liveDemoLink: "nolink.linkom",
@@ -82,7 +83,21 @@ const Projects: Project[] = [
 	{
 		id: "aims",
 		projectName: "AIMS (Agent Information Management System)",
-		projectDescription: "desc",
+		projectDescription: `Project Description - Lorem ipsum dolor sit amet consectetur
+		adipisicing elit. Nihil reiciendis ratione maxime doloribus
+		laborum. Incidunt minima quam in optio quas a laborum illo cumque
+		nesciunt, quis consequatur id, sed doloremque! Lorem ipsum dolor
+		sit amet, consectetur adipisicing elit. Incidunt voluptates
+		aspernatur maxime, consequuntur optio ratione adipisci commodi
+		labore eaque, ea doloribus explicabo molestiae repellat aut
+		possimus cum eveniet. Consectetur, voluptatem. Lorem ipsum dolor
+		sit amet consectetur adipisicing elit. Nihil reiciendis ratione
+		maxime doloribus laborum. Incidunt minima quam in optio quas a
+		laborum illo cumque nesciunt, quis consequatur id, sed doloremque!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+		voluptates aspernatur maxime, consequuntur optio ratione adipisci
+		commodi labore eaque, ea doloribus explicabo molestiae repellat
+		aut possimus cum eveniet. Consectetur, voluptatem.`,
 		technologiesUsed: [
 			{ tooltip: "Python", icon: Icons.pythonIcon },
 			{ tooltip: "Django", icon: Icons.djangoIcon },
@@ -91,8 +106,8 @@ const Projects: Project[] = [
 			{ tooltip: "JavaScript", icon: Icons.jsIcon },
 		],
 		projectTarget: "web",
-		media: ["screenshot.jpg", "video.gif"],
-		thumbnail: "thumbnail.jpg",
+		media: Media.aims,
+		thumbnail: Thumbnails.aimsThumb,
 		relatedWorkExperience: "Work Experience",
 		liveDemoLink: "https://aims-demo.herokuapp.com/",
 		isOpenSource: false,
@@ -112,8 +127,8 @@ const Projects: Project[] = [
 			{ tooltip: "DigitalOcean", icon: Icons.digitaloceanIcon },
 		],
 		projectTarget: "web",
-		media: [],
-		thumbnail: "thumbnail.jpg",
+		media: [{ original: "https://via.placeholder.com/250x200" }],
+		thumbnail: Thumbnails.servoThumb,
 		relatedWorkExperience: "Work Experience",
 		liveDemoLink: "https://servoapp-demo.herokuapp.com/",
 		isOpenSource: false,
@@ -134,8 +149,8 @@ const Projects: Project[] = [
 			{ tooltip: "Amazon Web Services (AWS)", icon: Icons.awsIcon },
 		],
 		projectTarget: "web",
-		media: [],
-		thumbnail: "thumbnail.jpg",
+		media: [{ original: "https://via.placeholder.com/250x200" }],
+		thumbnail: Thumbnails.phantomThumb,
 		relatedWorkExperience: "Work Experience",
 		liveDemoLink: "",
 		isOpenSource: false,
@@ -152,8 +167,8 @@ const Projects: Project[] = [
 			{ tooltip: "JavaScript", icon: Icons.jsIcon },
 		],
 		projectTarget: "mobile",
-		media: [],
-		thumbnail: "thumbnail.jpg",
+		media: [{ original: "https://via.placeholder.com/250x200" }],
+		thumbnail: Thumbnails.measureupThumb,
 		relatedWorkExperience: "Work Experience",
 		liveDemoLink: "",
 		isOpenSource: false,
@@ -173,8 +188,8 @@ const Projects: Project[] = [
 			{ tooltip: "Google Cloud Platform (GCP)", icon: Icons.gcpIcon },
 		],
 		projectTarget: "web",
-		media: [],
-		thumbnail: "thumbnail.jpg",
+		media: [{ original: "https://via.placeholder.com/250x200" }],
+		thumbnail: Thumbnails.iserviceThumb,
 		relatedWorkExperience: "Work Experience",
 		liveDemoLink: "",
 		isOpenSource: false,
