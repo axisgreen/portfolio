@@ -64,6 +64,10 @@ import aims2 from "./projects/aims/2.png";
 import iphone from "./iphone-x.svg";
 import monitor from "./monitor.svg";
 
+interface IMedia {
+	[project: string]: ReactImageGalleryItem[];
+}
+
 const Icons = {
 	bootstrapIcon,
 	djangoIcon,
@@ -118,9 +122,6 @@ const Thumbnails = {
 	iserviceThumb,
 };
 
-interface IMedia {
-	[project: string]: ReactImageGalleryItem[];
-}
 const Media: IMedia = {
 	aims: [{ original: aims1 }, { original: aims2 }],
 };
