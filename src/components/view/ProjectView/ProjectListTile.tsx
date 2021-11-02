@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Projects from "../../../data/Projects";
-import Card from "../../common/Card";
+import ProjectCard from "../../common/ProjectCard";
 
 const ProjectListTile: React.FC = () => {
 	return (
@@ -23,11 +23,12 @@ const ProjectListTile: React.FC = () => {
 						}}
 						transition={{ delay: 0.1 * i }}
 					>
-						<Card
+						<ProjectCard
 							key={i}
 							title={project.projectName}
 							description={project.projectDescription}
-							image={project.thumbnail}
+							thumbnail={project.thumbnail}
+							hoverImage={project.media[0].original}
 							link={`/projects/${project.id}`}
 						/>
 					</motion.div>
