@@ -56,9 +56,29 @@ import iserviceThumb from "./projects/thumbnails/iservice-thumb.svg";
 
 // Project Media
 import aims1 from "./projects/aims/1.png";
-import aims2 from "./projects/aims/2.png";
-// import aims1 from './projects/aims/1.png'
-// import aims1 from './projects/aims/1.png'
+
+import aims3 from "./projects/aims/3.png";
+import aims4 from "./projects/aims/4.png";
+import aims5 from "./projects/aims/5.png";
+import aims6 from "./projects/aims/6.png";
+import aims8 from "./projects/aims/8.png";
+import aims9 from "./projects/aims/9.png";
+import aims10 from "./projects/aims/10.png";
+import aims11 from "./projects/aims/11.png";
+import aims12 from "./projects/aims/12.png";
+import aims13 from "./projects/aims/13.png";
+import aims14 from "./projects/aims/14.png";
+import aims15 from "./projects/aims/15.png";
+import aims16 from "./projects/aims/16.png";
+import aims17 from "./projects/aims/17.png";
+import aims18 from "./projects/aims/18.png";
+import aims19 from "./projects/aims/19.png";
+import aims21 from "./projects/aims/21.png";
+import aims22 from "./projects/aims/22.png";
+import aims23 from "./projects/aims/23.png";
+import aims24 from "./projects/aims/24.png";
+import aims25 from "./projects/aims/25.png";
+import aims26 from "./projects/aims/26.png";
 
 // Other assets
 import iphone from "./iphone-x.svg";
@@ -123,7 +143,76 @@ const Thumbnails = {
 };
 
 const Media: IMedia = {
-	aims: [{ original: aims1 }, { original: aims2 }],
+	aims: [
+		{
+			original: aims1,
+			description: "Dashboard Administrators and Internal Staff",
+		},
+		{ original: aims4, description: "Agent KPI and Target tracking" },
+		{ original: aims3, description: "Agent KPI and Target tracking" },
+		{ original: aims5, description: "Agent Management" },
+		{ original: aims6, description: "Agent Management" },
+		{
+			original: aims8,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims9,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims11,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims10,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims12,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims13,
+			description: "Agent Salary/Payroll Creation and Management",
+		},
+		{
+			original: aims14,
+			description: "User administration and permission control",
+		},
+		{
+			original: aims15,
+			description: "User administration and permission control",
+		},
+		{
+			original: aims16,
+			description: "User administration and permission control",
+		},
+		{ original: aims17, description: "Report Generation and Data Processing" },
+		{ original: aims18, description: "Report Generation and Data Processing" },
+		{ original: aims19, description: "Report Generation and Data Processing" },
+		{ original: aims21, description: "Report Generation and Data Processing" },
+		{
+			original: aims22,
+			description: "Employee/Agent version of the application",
+		},
+		{
+			original: aims23,
+			description: "Employee/Agent version of the application",
+		},
+		{
+			original: aims24,
+			description: "Employee/Agent version of the application",
+		},
+		{
+			original: aims25,
+			description: "Employee/Agent version of the application",
+		},
+		{
+			original: aims26,
+			description: "Employee/Agent version of the application",
+		},
+	],
 };
 
 const OtherAssets = {
