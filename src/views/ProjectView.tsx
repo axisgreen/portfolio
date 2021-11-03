@@ -9,7 +9,7 @@ const ProjectView: React.FC = () => {
 				<div className="flex justify-center">
 					<Heading variant="page">Projects</Heading>
 				</div>
-				<div className="mx-auto mb-4 xl:mb-0 max-w-7xl">
+				<div className="mx-auto mb-4 max-w-7xl">
 					<ProjectListTile />
 				</div>
 			</div>
