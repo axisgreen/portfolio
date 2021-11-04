@@ -97,6 +97,44 @@ const ScreenshotGallery: Gallery = {
       description: "Employee/Agent version of the application",
     },
   ],
+  phantom: [
+    {
+      original: Screenshots.phantom.phantomDashboard,
+      description: "Dashboard",
+    },
+    {
+      original: Screenshots.phantom.phantomManageNews,
+      description: "Manage News Items (Approve/Reject/Edit)",
+    },
+    {
+      original: Screenshots.phantom.phantomAddNews,
+      description: "Add a News Item to send",
+    },
+    {
+      original: Screenshots.phantom.phantomAccounts,
+      description: "Accounts Overview",
+    },
+    {
+      original: Screenshots.phantom.phantomManageAccount,
+      description: "Manage an account",
+    },
+    {
+      original: Screenshots.phantom.phantomAddApp,
+      description: "Add an application to the account",
+    },
+    {
+      original: Screenshots.phantom.phantomAccMsgHistory,
+      description: "Account Messaging History",
+    },
+    {
+      original: Screenshots.phantom.phantomEventLog,
+      description: "Event Logs",
+    },
+    {
+      original: Screenshots.phantom.phantomSettings,
+      description: "Settings",
+    },
+  ],
 };
 
 export default ScreenshotGallery;

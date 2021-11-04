@@ -150,7 +150,7 @@ const Projects: Project[] = [
       { tooltip: "Amazon Web Services (AWS)", icon: Icons.awsIcon },
     ],
     projectTarget: "web",
-    media: [{ original: "https://via.placeholder.com/250x200" }],
+    media: ScreenshotGallery.phantom,
     thumbnail: Thumbnails.phantomThumb,
     relatedWorkExperience: "Work Experience",
     liveDemoLink: "",
