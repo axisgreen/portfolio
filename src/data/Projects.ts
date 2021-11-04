@@ -46,42 +46,6 @@ interface Project {
 
 const Projects: Project[] = [
   {
-    id: "test",
-    projectName: "Test Project",
-    projectDescription: `Project Description - Lorem ipsum dolor sit amet consectetur
-		adipisicing elit. Nihil reiciendis ratione maxime doloribus
-		laborum. Incidunt minima quam in optio quas a laborum illo cumque
-		nesciunt, quis consequatur id, sed doloremque! Lorem ipsum dolor
-		sit amet, consectetur adipisicing elit. Incidunt voluptates
-		aspernatur maxime, consequuntur optio ratione adipisci commodi
-		labore eaque, ea doloribus explicabo molestiae repellat aut
-		possimus cum eveniet. Consectetur, voluptatem. Lorem ipsum dolor
-		sit amet consectetur adipisicing elit. Nihil reiciendis ratione
-		maxime doloribus laborum. Incidunt minima quam in optio quas a
-		laborum illo cumque nesciunt, quis consequatur id, sed doloremque!
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-		voluptates aspernatur maxime, consequuntur optio ratione adipisci
-		commodi labore eaque, ea doloribus explicabo molestiae repellat
-		aut possimus cum eveniet. Consectetur, voluptatem.`,
-    technologiesUsed: [
-      { tooltip: "MongoDB", icon: Icons.mongodbIcon },
-      { tooltip: "Express.js", icon: Icons.expressIcon },
-      { tooltip: "React.js", icon: Icons.reactIcon },
-      {
-        tooltip: "Node.js",
-        icon: Icons.nodejsIcon,
-      },
-      { tooltip: "TypeScript", icon: Icons.tsIcon },
-    ],
-    projectTarget: "web",
-    media: [{ original: "https://via.placeholder.com/250x200" }],
-    thumbnail: "",
-    relatedWorkExperience: "",
-    liveDemoLink: "nolink.linkom",
-    isOpenSource: true,
-    openSourceRepo: "https://github.com/axisgreen",
-  },
-  {
     id: "aims",
     projectName: "AIMS (Agent Information Management System)",
     projectDescription: `Project Description - Lorem ipsum dolor sit amet consectetur
