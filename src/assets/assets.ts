@@ -55,169 +55,186 @@ import measureupThumb from "./projects/thumbnails/measureup-thumb.svg";
 import iserviceThumb from "./projects/thumbnails/iservice-thumb.svg";
 
 // Project Media
-import aims1 from "./projects/aims/1.png";
-
-import aims3 from "./projects/aims/3.png";
-import aims4 from "./projects/aims/4.png";
-import aims5 from "./projects/aims/5.png";
-import aims6 from "./projects/aims/6.png";
-import aims8 from "./projects/aims/8.png";
-import aims9 from "./projects/aims/9.png";
-import aims10 from "./projects/aims/10.png";
-import aims11 from "./projects/aims/11.png";
-import aims12 from "./projects/aims/12.png";
-import aims13 from "./projects/aims/13.png";
-import aims14 from "./projects/aims/14.png";
-import aims15 from "./projects/aims/15.png";
-import aims16 from "./projects/aims/16.png";
-import aims17 from "./projects/aims/17.png";
-import aims18 from "./projects/aims/18.png";
-import aims19 from "./projects/aims/19.png";
-import aims21 from "./projects/aims/21.png";
-import aims22 from "./projects/aims/22.png";
-import aims23 from "./projects/aims/23.png";
-import aims24 from "./projects/aims/24.png";
-import aims25 from "./projects/aims/25.png";
-import aims26 from "./projects/aims/26.png";
+import aimsDashboardStaff from "./projects/aims/aims-dashboard-staff.png";
+import aimsAddActivation from "./projects/aims/aims-add-activation.png";
+import aimsActivations from "./projects/aims/aims-activations.png";
+import aimsAgents from "./projects/aims/aims-agents.png";
+import aimsAddAgent from "./projects/aims/aims-add-agent.png";
+import aimsAgentSalaries from "./projects/aims/aims-agent-salaries.png";
+import aimsAddAgentSalary from "./projects/aims/aims-add-agent-salary.png";
+import aimsSalaryAddition from "./projects/aims/aims-salary-additions.png";
+import aimsAddSalaryAddition from "./projects/aims/aims-add-salary-addition.png";
+import aimsSalaryDeductions from "./projects/aims/aims-salary-deductions.png";
+import aimsSalarySummary from "./projects/aims/aims-salary-summary.png";
+import aimsUsers from "./projects/aims/aims-users.png";
+import aimsEditUser from "./projects/aims/aims-edit-user.png";
+import aimsUserPermissions from "./projects/aims/aims-user-permissions.png";
+import aimsReportPayroll from "./projects/aims/aims-report-payroll.png";
+import aimsReportPayrollExample from "./projects/aims/aims-report-payroll-example.png";
+import aimsReportAgent from "./projects/aims/aims-report-agent.png";
+import aimsReportAgentExample from "./projects/aims/aims-report-agent-example.png";
+import aimsDashboardEmployee from "./projects/aims/aims-dashboard-employee.png";
+import aimsReportActivationEmployee from "./projects/aims/aims-report-activation-employee.png";
+import aimsReportSalaryEmployee from "./projects/aims/aims-report-salary-employee.png";
+import aimsSalaryEmployeeExample from "./projects/aims/aims-salary-employee-example.png";
+import aimsEmployeeAccEdit from "./projects/aims/aims-employee-acc-edit.png";
 
 // Other assets
 import iphone from "./iphone-x.svg";
 import monitor from "./monitor.svg";
 
 interface IMedia {
-	[project: string]: ReactImageGalleryItem[];
+  [project: string]: ReactImageGalleryItem[];
 }
 
 const Icons = {
-	bootstrapIcon,
-	djangoIcon,
-	expressIcon,
-	flutterIcon,
-	githubIcon,
-	bashIcon,
-	menuIcon,
-	mongodbIcon,
-	nodejsIcon,
-	postgresIcon,
-	pythonIcon,
-	rabbitmqIcon,
-	reactIcon,
-	tsIcon,
-	jsIcon,
-	linkedinIcon,
-	closeIcon,
-	chevronRight,
-	mailIcon,
-	eyeIcon,
-	chevronLeft,
-	jqueryIcon,
-	awsIcon,
-	gcpIcon,
-	digitaloceanIcon,
-	vuejsIcon,
-	dartIcon,
-	stripeIcon,
-	herokuIcon,
+  bootstrapIcon,
+  djangoIcon,
+  expressIcon,
+  flutterIcon,
+  githubIcon,
+  bashIcon,
+  menuIcon,
+  mongodbIcon,
+  nodejsIcon,
+  postgresIcon,
+  pythonIcon,
+  rabbitmqIcon,
+  reactIcon,
+  tsIcon,
+  jsIcon,
+  linkedinIcon,
+  closeIcon,
+  chevronRight,
+  mailIcon,
+  eyeIcon,
+  chevronLeft,
+  jqueryIcon,
+  awsIcon,
+  gcpIcon,
+  digitaloceanIcon,
+  vuejsIcon,
+  dartIcon,
+  stripeIcon,
+  herokuIcon,
 };
 
 const Backgrounds = {
-	waveV1,
-	waveV2,
-	waveV3,
-	waveV4,
+  waveV1,
+  waveV2,
+  waveV3,
+  waveV4,
 };
 
 const Logos = {
-	deakinLogo,
-	deakinLaunchpadLogo,
-	websolLogo,
-	aimsLogo,
+  deakinLogo,
+  deakinLaunchpadLogo,
+  websolLogo,
+  aimsLogo,
 };
 
 const Thumbnails = {
-	aimsThumb,
-	servoThumb,
-	phantomThumb,
-	measureupThumb,
-	iserviceThumb,
+  aimsThumb,
+  servoThumb,
+  phantomThumb,
+  measureupThumb,
+  iserviceThumb,
 };
 
 const Media: IMedia = {
-	aims: [
-		{
-			original: aims1,
-			description: "Dashboard Administrators and Internal Staff",
-		},
-		{ original: aims4, description: "Agent KPI and Target tracking" },
-		{ original: aims3, description: "Agent KPI and Target tracking" },
-		{ original: aims5, description: "Agent Management" },
-		{ original: aims6, description: "Agent Management" },
-		{
-			original: aims8,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims9,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims11,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims10,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims12,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims13,
-			description: "Agent Salary/Payroll Creation and Management",
-		},
-		{
-			original: aims14,
-			description: "User administration and permission control",
-		},
-		{
-			original: aims15,
-			description: "User administration and permission control",
-		},
-		{
-			original: aims16,
-			description: "User administration and permission control",
-		},
-		{ original: aims17, description: "Report Generation and Data Processing" },
-		{ original: aims18, description: "Report Generation and Data Processing" },
-		{ original: aims19, description: "Report Generation and Data Processing" },
-		{ original: aims21, description: "Report Generation and Data Processing" },
-		{
-			original: aims22,
-			description: "Employee/Agent version of the application",
-		},
-		{
-			original: aims23,
-			description: "Employee/Agent version of the application",
-		},
-		{
-			original: aims24,
-			description: "Employee/Agent version of the application",
-		},
-		{
-			original: aims25,
-			description: "Employee/Agent version of the application",
-		},
-		{
-			original: aims26,
-			description: "Employee/Agent version of the application",
-		},
-	],
+  aims: [
+    {
+      original: aimsDashboardStaff,
+      description: "Dashboard for Administrators and Internal Staff",
+    },
+    {
+      original: aimsActivations,
+      description: "KPI and target tracking for employed agents",
+    },
+    {
+      original: aimsAddActivation,
+      description: "KPI and target tracking for employed agents",
+    },
+    { original: aimsAgents, description: "Agent Management" },
+    { original: aimsAddAgent, description: "Agent Management" },
+    {
+      original: aimsAgentSalaries,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsAddAgentSalary,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsAddSalaryAddition,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsSalaryAddition,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsSalaryDeductions,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsSalarySummary,
+      description: "Agent Salary/Payroll Creation and Management",
+    },
+    {
+      original: aimsUsers,
+      description: "User administration and permission control",
+    },
+    {
+      original: aimsEditUser,
+      description: "User administration and permission control",
+    },
+    {
+      original: aimsUserPermissions,
+      description: "User administration and permission control",
+    },
+    {
+      original: aimsReportPayroll,
+      description: "Report Generation and Data Processing",
+    },
+    {
+      original: aimsReportPayrollExample,
+      description: "Report Generation and Data Processing",
+    },
+    {
+      original: aimsReportAgent,
+      description: "Report Generation and Data Processing",
+    },
+    {
+      original: aimsReportAgentExample,
+      description: "Report Generation and Data Processing",
+    },
+    {
+      original: aimsDashboardEmployee,
+      description: "Employee/Agent version of the application",
+    },
+    {
+      original: aimsReportActivationEmployee,
+      description: "Employee/Agent version of the application",
+    },
+    {
+      original: aimsReportSalaryEmployee,
+      description: "Employee/Agent version of the application",
+    },
+    {
+      original: aimsSalaryEmployeeExample,
+      description: "Employee/Agent version of the application",
+    },
+    {
+      original: aimsEmployeeAccEdit,
+      description: "Employee/Agent version of the application",
+    },
+  ],
 };
 
 const OtherAssets = {
-	iphone,
-	monitor,
+  iphone,
+  monitor,
 };
 
 export { Icons, Backgrounds, Logos, Thumbnails, Media, MyLogo, OtherAssets };
