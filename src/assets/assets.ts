@@ -105,16 +105,6 @@ import servoSettings from "./projects/servo/servo-settings.png";
 import servoExport from "./projects/servo/servo-export.png";
 import servoExportExample from "./projects/servo/servo-export-example.png";
 
-import measureupWelcome from "./projects/measureup/measureup-welcome.png";
-import measureupSignin from "./projects/measureup/measureup-signin.png";
-import measureupSignup from "./projects/measureup/measureup-signup.png";
-import measureupSigninKbUp from "./projects/measureup/measureup-signin-kbup.png";
-import measureupHome from "./projects/measureup/measureup-home.png";
-import measureupDevtools from "./projects/measureup/measureup-devtools.png";
-import measureupPurchase from "./projects/measureup/measureup-purchase.png";
-import measureupSelectMeasure from "./projects/measureup/measureup-select-measure.png";
-import measureupWelcomeLanding from "./projects/measureup/measureup-welcome-landing.png";
-import measureupCamera from "./projects/measureup/measureup-camera.png";
 import measureupScreen1 from "./projects/measureup/screen-1.png";
 import measureupScreen2 from "./projects/measureup/screen-2.png";
 import measureupScreen3 from "./projects/measureup/screen-3.png";
