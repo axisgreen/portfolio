@@ -1,0 +1,7 @@
+.chevron-left {
+  filter: invert(1);
+}
+
+.chevron-parent:hover .chevron-left {
+  filter: none;
+}
