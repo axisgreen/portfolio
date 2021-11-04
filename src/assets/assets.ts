@@ -87,114 +87,172 @@ import phantomManageAccount from "./projects/phantom/phantom-manage-account.png"
 import phantomManageNews from "./projects/phantom/phantom-manage-news.png";
 import phantomSettings from "./projects/phantom/phantom-settings.png";
 
+import servoDashboard from "./projects/servo/servo-dashboard.png";
+import servoCreateNew from "./projects/servo/servo-create-new.png";
+import servoCustomers from "./projects/servo/servo-customers.png";
+import servoNewCustomer from "./projects/servo/servo-new-customer.png";
+import servoCustomerDetail from "./projects/servo/servo-customer-detail.png";
+import servoVehicles from "./projects/servo/servo-vehicles.png";
+import servoNewVehicle from "./projects/servo/servo-new-vehicle.png";
+import servoVehicleDetail from "./projects/servo/servo-vehicle-detail.png";
+import servoServices from "./projects/servo/servo-services.png";
+import servoNewService from "./projects/servo/servo-new-service.png";
+import servoServiceDetail from "./projects/servo/servo-service-detail.png";
+import servoUsers from "./projects/servo/servo-users.png";
+import servoEditUser from "./projects/servo/servo-edit-user.png";
+import servoUserLogs from "./projects/servo/servo-user-logs.png";
+import servoSettings from "./projects/servo/servo-settings.png";
+import servoExport from "./projects/servo/servo-export.png";
+import servoExportExample from "./projects/servo/servo-export-example.png";
+
+import measureupWelcome from "./projects/measureup/measureup-welcome.png";
+import measureupSignin from "./projects/measureup/measureup-signin.png";
+import measureupSignup from "./projects/measureup/measureup-signup.png";
+import measureupSigninKbUp from "./projects/measureup/measureup-signin-kbup.png";
+import measureupHome from "./projects/measureup/measureup-home.png";
+import measureupDevtools from "./projects/measureup/measureup-devtools.png";
+import measureupPurchase from "./projects/measureup/measureup-purchase.png";
+import measureupSelectMeasure from "./projects/measureup/measureup-select-measure.png";
+import measureupWelcomeLanding from "./projects/measureup/measureup-welcome-landing.png";
+import measureupCamera from "./projects/measureup/measureup-camera.png";
+import measureupScreen1 from "./projects/measureup/screen-1.png";
+import measureupScreen2 from "./projects/measureup/screen-2.png";
+import measureupScreen3 from "./projects/measureup/screen-3.png";
+import measureupScreen4 from "./projects/measureup/screen-4.png";
+
 // Other assets
 import iphone from "./iphone-x.svg";
 import monitor from "./monitor.svg";
 
 const Icons = {
-  bootstrapIcon,
-  djangoIcon,
-  expressIcon,
-  flutterIcon,
-  githubIcon,
-  bashIcon,
-  menuIcon,
-  mongodbIcon,
-  nodejsIcon,
-  postgresIcon,
-  pythonIcon,
-  rabbitmqIcon,
-  reactIcon,
-  tsIcon,
-  jsIcon,
-  linkedinIcon,
-  closeIcon,
-  chevronRight,
-  mailIcon,
-  eyeIcon,
-  chevronLeft,
-  jqueryIcon,
-  awsIcon,
-  gcpIcon,
-  digitaloceanIcon,
-  vuejsIcon,
-  dartIcon,
-  stripeIcon,
-  herokuIcon,
+	bootstrapIcon,
+	djangoIcon,
+	expressIcon,
+	flutterIcon,
+	githubIcon,
+	bashIcon,
+	menuIcon,
+	mongodbIcon,
+	nodejsIcon,
+	postgresIcon,
+	pythonIcon,
+	rabbitmqIcon,
+	reactIcon,
+	tsIcon,
+	jsIcon,
+	linkedinIcon,
+	closeIcon,
+	chevronRight,
+	mailIcon,
+	eyeIcon,
+	chevronLeft,
+	jqueryIcon,
+	awsIcon,
+	gcpIcon,
+	digitaloceanIcon,
+	vuejsIcon,
+	dartIcon,
+	stripeIcon,
+	herokuIcon,
 };
 
 const Backgrounds = {
-  waveV1,
-  waveV2,
-  waveV3,
-  waveV4,
+	waveV1,
+	waveV2,
+	waveV3,
+	waveV4,
 };
 
 const Logos = {
-  deakinLogo,
-  deakinLaunchpadLogo,
-  websolLogo,
-  aimsLogo,
+	deakinLogo,
+	deakinLaunchpadLogo,
+	websolLogo,
+	aimsLogo,
 };
 
 const Thumbnails = {
-  aimsThumb,
-  servoThumb,
-  phantomThumb,
-  measureupThumb,
-  iserviceThumb,
+	aimsThumb,
+	servoThumb,
+	phantomThumb,
+	measureupThumb,
+	iserviceThumb,
 };
 
 const Screenshots = {
-  aims: {
-    aimsDashboardStaff,
-    aimsActivations,
-    aimsAddActivation,
-    aimsAgents,
-    aimsAddAgent,
-    aimsAgentSalaries,
-    aimsAddAgentSalary,
-    aimsAddSalaryAddition,
-    aimsSalaryAddition,
-    aimsSalaryDeductions,
-    aimsSalarySummary,
-    aimsUsers,
-    aimsEditUser,
-    aimsUserPermissions,
-    aimsReportPayroll,
-    aimsReportPayrollExample,
-    aimsReportAgent,
-    aimsReportAgentExample,
-    aimsDashboardEmployee,
-    aimsReportActivationEmployee,
-    aimsReportSalaryEmployee,
-    aimsSalaryEmployeeExample,
-    aimsEmployeeAccEdit,
-  },
-  phantom: {
-    phantomDashboard,
-    phantomAccMsgHistory,
-    phantomAccounts,
-    phantomAddApp,
-    phantomAddNews,
-    phantomEventLog,
-    phantomManageAccount,
-    phantomManageNews,
-    phantomSettings,
-  },
+	aims: {
+		aimsDashboardStaff,
+		aimsActivations,
+		aimsAddActivation,
+		aimsAgents,
+		aimsAddAgent,
+		aimsAgentSalaries,
+		aimsAddAgentSalary,
+		aimsAddSalaryAddition,
+		aimsSalaryAddition,
+		aimsSalaryDeductions,
+		aimsSalarySummary,
+		aimsUsers,
+		aimsEditUser,
+		aimsUserPermissions,
+		aimsReportPayroll,
+		aimsReportPayrollExample,
+		aimsReportAgent,
+		aimsReportAgentExample,
+		aimsDashboardEmployee,
+		aimsReportActivationEmployee,
+		aimsReportSalaryEmployee,
+		aimsSalaryEmployeeExample,
+		aimsEmployeeAccEdit,
+	},
+	phantom: {
+		phantomDashboard,
+		phantomAccMsgHistory,
+		phantomAccounts,
+		phantomAddApp,
+		phantomAddNews,
+		phantomEventLog,
+		phantomManageAccount,
+		phantomManageNews,
+		phantomSettings,
+	},
+	servo: {
+		servoDashboard,
+		servoCreateNew,
+		servoCustomers,
+		servoNewCustomer,
+		servoCustomerDetail,
+		servoVehicles,
+		servoNewVehicle,
+		servoVehicleDetail,
+		servoServices,
+		servoNewService,
+		servoServiceDetail,
+		servoUsers,
+		servoEditUser,
+		servoUserLogs,
+		servoSettings,
+		servoExport,
+		servoExportExample,
+	},
+	measureup: {
+		measureupScreen1,
+		measureupScreen2,
+		measureupScreen3,
+		measureupScreen4,
+	},
 };
 
 const OtherAssets = {
-  iphone,
-  monitor,
+	iphone,
+	monitor,
 };
 
 export {
-  Icons,
-  Backgrounds,
-  Logos,
-  Thumbnails,
-  Screenshots,
-  MyLogo,
-  OtherAssets,
+	Icons,
+	Backgrounds,
+	Logos,
+	Thumbnails,
+	Screenshots,
+	MyLogo,
+	OtherAssets,
 };
