@@ -1,5 +1,3 @@
-import { ReactImageGalleryItem } from "react-image-gallery";
-
 // Icons
 import bootstrapIcon from "./icons/bootstrap-icon.svg";
 import djangoIcon from "./icons/djangoproject-icon.svg";
@@ -83,10 +81,6 @@ import aimsEmployeeAccEdit from "./projects/aims/aims-employee-acc-edit.png";
 import iphone from "./iphone-x.svg";
 import monitor from "./monitor.svg";
 
-interface IMedia {
-  [project: string]: ReactImageGalleryItem[];
-}
-
 const Icons = {
   bootstrapIcon,
   djangoIcon,
@@ -141,95 +135,32 @@ const Thumbnails = {
   iserviceThumb,
 };
 
-const Media: IMedia = {
-  aims: [
-    {
-      original: aimsDashboardStaff,
-      description: "Dashboard for Administrators and Internal Staff",
-    },
-    {
-      original: aimsActivations,
-      description: "KPI and target tracking for employed agents",
-    },
-    {
-      original: aimsAddActivation,
-      description: "KPI and target tracking for employed agents",
-    },
-    { original: aimsAgents, description: "Agent Management" },
-    { original: aimsAddAgent, description: "Agent Management" },
-    {
-      original: aimsAgentSalaries,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsAddAgentSalary,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsAddSalaryAddition,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsSalaryAddition,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsSalaryDeductions,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsSalarySummary,
-      description: "Agent Salary/Payroll Creation and Management",
-    },
-    {
-      original: aimsUsers,
-      description: "User administration and permission control",
-    },
-    {
-      original: aimsEditUser,
-      description: "User administration and permission control",
-    },
-    {
-      original: aimsUserPermissions,
-      description: "User administration and permission control",
-    },
-    {
-      original: aimsReportPayroll,
-      description: "Report Generation and Data Processing",
-    },
-    {
-      original: aimsReportPayrollExample,
-      description: "Report Generation and Data Processing",
-    },
-    {
-      original: aimsReportAgent,
-      description: "Report Generation and Data Processing",
-    },
-    {
-      original: aimsReportAgentExample,
-      description: "Report Generation and Data Processing",
-    },
-    {
-      original: aimsDashboardEmployee,
-      description: "Employee/Agent version of the application",
-    },
-    {
-      original: aimsReportActivationEmployee,
-      description: "Employee/Agent version of the application",
-    },
-    {
-      original: aimsReportSalaryEmployee,
-      description: "Employee/Agent version of the application",
-    },
-    {
-      original: aimsSalaryEmployeeExample,
-      description: "Employee/Agent version of the application",
-    },
-    {
-      original: aimsEmployeeAccEdit,
-      description: "Employee/Agent version of the application",
-    },
-  ],
+const Screenshots = {
+  aims: {
+    aimsDashboardStaff,
+    aimsActivations,
+    aimsAddActivation,
+    aimsAgents,
+    aimsAddAgent,
+    aimsAgentSalaries,
+    aimsAddAgentSalary,
+    aimsAddSalaryAddition,
+    aimsSalaryAddition,
+    aimsSalaryDeductions,
+    aimsSalarySummary,
+    aimsUsers,
+    aimsEditUser,
+    aimsUserPermissions,
+    aimsReportPayroll,
+    aimsReportPayrollExample,
+    aimsReportAgent,
+    aimsReportAgentExample,
+    aimsDashboardEmployee,
+    aimsReportActivationEmployee,
+    aimsReportSalaryEmployee,
+    aimsSalaryEmployeeExample,
+    aimsEmployeeAccEdit,
+  },
 };
 
 const OtherAssets = {
@@ -237,4 +168,12 @@ const OtherAssets = {
   monitor,
 };
 
-export { Icons, Backgrounds, Logos, Thumbnails, Media, MyLogo, OtherAssets };
+export {
+  Icons,
+  Backgrounds,
+  Logos,
+  Thumbnails,
+  Screenshots,
+  MyLogo,
+  OtherAssets,
+};
