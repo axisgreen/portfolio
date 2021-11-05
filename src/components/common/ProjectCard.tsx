@@ -22,7 +22,7 @@ const ProjectCard: React.FC<Props> = ({
 	return (
 		<NavLink exact to={link}>
 			<div
-				className="flex flex-col sm:flex-row max-w-3xl p-4 m-2 hover:bg-white hover:shadow-xl hover:text-black transition-all rounded-md"
+				className="flex flex-col sm:flex-row max-w-3xl p-4 m-2 hover:bg-white hover:shadow-xl hover:text-black transition-all rounded-md gap-8"
 				onMouseEnter={() => setShowThumbnail(false)}
 				onMouseLeave={() => setShowThumbnail(true)}
 			>
@@ -32,6 +32,7 @@ const ProjectCard: React.FC<Props> = ({
 						animate={{ opacity: 1, scale: 1 }}
 						exit={{ opacity: 0, scale: 1.1 }}
 						className="flex justify-center"
+						style={{ minWidth: "200px" }}
 					>
 						<img
 							src={thumbnail}
@@ -47,6 +48,7 @@ const ProjectCard: React.FC<Props> = ({
 						animate={{ opacity: 1, scale: 1.1 }}
 						exit={{ opacity: 0, scale: 1 }}
 						className="flex justify-center"
+						style={{ minWidth: "200px" }}
 					>
 						<img
 							src={hoverImage}
@@ -57,8 +59,7 @@ const ProjectCard: React.FC<Props> = ({
 						/>
 					</motion.div>
 				)}
-
-				<div className="flex flex-col px-2 py-8 sm:px-8 sm: gap-2 justify-center">
+				<div className="flex flex-col sm:gap-2 justify-center ">
 					<div className="text-xl font-semibold">{title}</div>
 					<div className="max-w-md">{description.slice(0, 120)}...</div>
 				</div>
