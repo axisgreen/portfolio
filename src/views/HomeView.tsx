@@ -4,11 +4,11 @@ import SecondaryButton from "../components/common/SecondaryButton";
 import ExoTwoFont from "../components/fonts/ExoTwoFont";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import Fade from "../components/transitions/PageFade";
+import PageFade from "../components/transitions/PageFade";
 
 const HomeView: React.FC = () => {
 	return (
-		<Fade>
+		<PageFade>
 			<div className="md:ml-10 my-auto">
 				<div className="flex flex-col justify-center 3xl:items-center text-white">
 					<ExoTwoFont>
@@ -39,7 +39,7 @@ const HomeView: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</Fade>
+		</PageFade>
 	);
 };
 

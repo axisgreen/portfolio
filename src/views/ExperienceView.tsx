@@ -1,10 +1,10 @@
 import Heading from "../components/common/Heading";
-import Fade from "../components/transitions/PageFade";
+import PageFade from "../components/transitions/PageFade";
 import ExperiencesTile from "../components/view/ExperienceView/ExperiencesTile";
 
 const ExperienceView: React.FC = () => {
 	return (
-		<Fade>
+		<PageFade>
 			<div className="flex flex-col flex-1 gap-8 text-white">
 				<div className="flex justify-center">
 					<Heading variant="page">Experience</Heading>
@@ -13,7 +13,7 @@ const ExperienceView: React.FC = () => {
 					<ExperiencesTile />
 				</div>
 			</div>
-		</Fade>
+		</PageFade>
 	);
 };
 

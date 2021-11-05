@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Fade: React.FC = ({ children }) => {
+const PageFade: React.FC = ({ children }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -14,4 +14,4 @@ const Fade: React.FC = ({ children }) => {
 	);
 };
 
-export default Fade;
+export default PageFade;
