@@ -46,6 +46,28 @@ interface Project {
 
 const Projects: Project[] = [
 	{
+		id: "phantom",
+		projectName: "Phantom",
+		projectDescription: "desc",
+		technologiesUsed: [
+			{ tooltip: "Python", icon: Icons.pythonIcon },
+			{ tooltip: "Django", icon: Icons.djangoIcon },
+			{ tooltip: "PostgreSQL", icon: Icons.postgresIcon },
+			{ tooltip: "Bootstrap", icon: Icons.bootstrapIcon },
+			{ tooltip: "RabbitMQ", icon: Icons.rabbitmqIcon },
+			{ tooltip: "JavaScript", icon: Icons.jsIcon },
+			{ tooltip: "Vue.js", icon: Icons.vuejsIcon },
+			{ tooltip: "Amazon Web Services (AWS)", icon: Icons.awsIcon },
+		],
+		projectTarget: "web",
+		media: ScreenshotGallery.phantom,
+		thumbnail: Thumbnails.phantomThumb,
+		relatedWorkExperience: "Work Experience",
+		liveDemoLink: "",
+		isOpenSource: false,
+		openSourceRepo: "https://github.com/axisgreen",
+	},
+	{
 		id: "aims",
 		projectName: "AIMS (Agent Information Management System)",
 		projectDescription: `Project Description - Lorem ipsum dolor sit amet consectetur
@@ -99,28 +121,7 @@ const Projects: Project[] = [
 		isOpenSource: false,
 		openSourceRepo: "https://github.com/axisgreen",
 	},
-	{
-		id: "phantom",
-		projectName: "Phantom",
-		projectDescription: "desc",
-		technologiesUsed: [
-			{ tooltip: "Python", icon: Icons.pythonIcon },
-			{ tooltip: "Django", icon: Icons.djangoIcon },
-			{ tooltip: "PostgreSQL", icon: Icons.postgresIcon },
-			{ tooltip: "Bootstrap", icon: Icons.bootstrapIcon },
-			{ tooltip: "RabbitMQ", icon: Icons.rabbitmqIcon },
-			{ tooltip: "JavaScript", icon: Icons.jsIcon },
-			{ tooltip: "Vue.js", icon: Icons.vuejsIcon },
-			{ tooltip: "Amazon Web Services (AWS)", icon: Icons.awsIcon },
-		],
-		projectTarget: "web",
-		media: ScreenshotGallery.phantom,
-		thumbnail: Thumbnails.phantomThumb,
-		relatedWorkExperience: "Work Experience",
-		liveDemoLink: "",
-		isOpenSource: false,
-		openSourceRepo: "https://github.com/axisgreen",
-	},
+
 	{
 		id: "measureup",
 		projectName: "MeasureUp",
