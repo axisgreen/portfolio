@@ -11,7 +11,7 @@ const ProjectDetailView: React.FC = () => {
 	const project = getProjectFromId(projectId);
 	return (
 		<Fade>
-			<div className="flex flex-1 flex-col lg:flex-row justify-center gap-8 3xl:gap-16 my-4 xl:mx-0 text-white">
+			<div className="flex flex-1 flex-col lg:flex-row justify-center items-center gap-8 3xl:gap-16 my-4 xl:mx-0 text-white">
 				{project && (
 					<>
 						<motion.div
@@ -31,7 +31,7 @@ const ProjectDetailView: React.FC = () => {
 								items={project.media}
 								autoPlay={false}
 								showIndex
-								additionalClass="shadow-xl"
+								additionalClass="shadow-xl items-center justify-center"
 							/>
 						</motion.div>
 						<ProjectInfoTile project={project} />
