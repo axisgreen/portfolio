@@ -16,12 +16,13 @@ const ContactForm: React.FC = () => {
 			className="flex flex-col bg-gray-800 shadow-xl rounded-md"
 		>
 			<form
-				name="getintouch"
+				name="contact"
 				method="POST"
 				data-netlify="true"
 				className="flex flex-1"
 			>
 				<div className="flex flex-col flex-wrap gap-4 w-full p-6">
+					<input type="hidden" name="form-name" value="contact" />
 					<InputField name="name" label="Name" />
 					<InputField name="email" label="E-Mail" type="email" />
 					<InputField name="subject" label="Subject" />
