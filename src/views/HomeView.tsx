@@ -5,8 +5,10 @@ import ExoTwoFont from "../components/fonts/ExoTwoFont";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import PageFade from "../components/transitions/PageFade";
+import { useHistory } from "react-router";
 
 const HomeView: React.FC = () => {
+	const history = useHistory();
 	return (
 		<PageFade>
 			<div className="md:ml-10 my-auto">
@@ -35,7 +37,10 @@ const HomeView: React.FC = () => {
 
 					<div className="flex gap-2 my-2 mx-1">
 						<PrimaryButton buttonText="Get in Touch" />
-						<SecondaryButton buttonText="View my work" />
+						<SecondaryButton
+							buttonText="View my work"
+							onClick={() => history.push("/projects")}
+						/>
 					</div>
 				</div>
 			</div>
