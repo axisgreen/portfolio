@@ -16,7 +16,7 @@ const ContactForm: React.FC = () => {
 			className="flex flex-col bg-gray-800 shadow-xl rounded-md"
 		>
 			<form
-				name="getintouch"
+				name="contact"
 				method="POST"
 				data-netlify="true"
 				className="flex flex-1"
