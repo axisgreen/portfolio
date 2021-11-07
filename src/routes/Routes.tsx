@@ -1,5 +1,4 @@
 import { Route, Switch, useLocation } from "react-router";
-import AboutView from "../views/AboutView";
 import ExperienceView from "../views/ExperienceView";
 import HomeView from "../views/HomeView";
 import ProjectDetailView from "../views/ProjectDetailView";
@@ -11,9 +10,6 @@ const Routes: React.FC = () => {
 		<Switch location={location} key={location.key}>
 			<Route exact path="/">
 				<HomeView />
-			</Route>
-			<Route exact path="/about">
-				<AboutView />
 			</Route>
 			<Route exact path="/projects">
 				<ProjectView />
