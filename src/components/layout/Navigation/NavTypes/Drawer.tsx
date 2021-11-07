@@ -56,6 +56,7 @@ const Drawer: React.FC = () => {
 					<RouterLink transition to="/" linkText="Home" />
 					<RouterLink transition to="/projects" linkText="Projects" />
 					<RouterLink transition to="/experience" linkText="Experience" />
+					<RouterLink transition to="/contact" linkText="Contact" />
 				</div>
 			</aside>
 		</div>
