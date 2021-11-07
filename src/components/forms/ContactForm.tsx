@@ -23,10 +23,10 @@ const ContactForm: React.FC = () => {
 			>
 				<div className="flex flex-col flex-wrap gap-4 w-full p-6">
 					<input type="hidden" name="form-name" value="contact" />
-					<InputField name="name" label="Name" />
-					<InputField name="email" label="E-Mail" type="email" />
-					<InputField name="subject" label="Subject" />
-					<InputField name="message" label="Message" isTextArea />
+					<InputField name="name" label="Name" isRequired />
+					<InputField name="email" label="E-Mail" type="email" isRequired />
+					<InputField name="subject" label="Subject" isRequired />
+					<InputField name="message" label="Message" isTextArea isRequired />
 					<div className="my-2">
 						<PrimaryButton
 							buttonIcon={Icons.chevronRight}
