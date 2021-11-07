@@ -19,6 +19,7 @@ const ContactForm: React.FC = () => {
 				name="contact"
 				method="POST"
 				data-netlify="true"
+				data-netlify-recaptcha="true"
 				className="flex flex-1"
 			>
 				<div className="flex flex-col flex-wrap gap-4 w-full p-6">
