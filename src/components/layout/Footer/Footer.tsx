@@ -7,7 +7,7 @@ const Footer = () => {
 			<div className="flex 2xl:justify-center gap-1 2xl:my-1">
 				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
 					<a
-						href="mailto:professional@email.com"
+						href="mailto:dlhbdissanayake@gmail.com"
 						target="_blank"
 						rel="noreferrer"
 					>
