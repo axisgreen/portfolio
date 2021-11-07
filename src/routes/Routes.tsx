@@ -12,9 +12,6 @@ const Routes: React.FC = () => {
 			<Route exact path="/">
 				<HomeView />
 			</Route>
-			<Route exact path="/about">
-				<AboutView />
-			</Route>
 			<Route exact path="/projects">
 				<ProjectView />
 			</Route>

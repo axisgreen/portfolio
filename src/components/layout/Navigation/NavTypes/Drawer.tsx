@@ -54,7 +54,6 @@ const Drawer: React.FC = () => {
 				</div>
 				<div className="flex flex-col uppercase text-center text-2xl">
 					<RouterLink transition to="/" linkText="Home" />
-					<RouterLink transition to="/about" linkText="About" />
 					<RouterLink transition to="/projects" linkText="Projects" />
 					<RouterLink transition to="/experience" linkText="Experience" />
 				</div>
