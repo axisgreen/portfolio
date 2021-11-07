@@ -36,7 +36,10 @@ const HomeView: React.FC = () => {
 					</div>
 
 					<div className="flex gap-2 my-2 mx-1">
-						<PrimaryButton buttonText="Get in Touch" />
+						<PrimaryButton
+							buttonText="Get in Touch"
+							onClick={() => history.push("/contact")}
+						/>
 						<SecondaryButton
 							buttonText="View my work"
 							onClick={() => history.push("/projects")}

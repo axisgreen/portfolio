@@ -1,5 +1,5 @@
 import { Route, Switch, useLocation } from "react-router";
-import AboutView from "../views/AboutView";
+import ContactView from "../views/ContactView";
 import ExperienceView from "../views/ExperienceView";
 import HomeView from "../views/HomeView";
 import ProjectDetailView from "../views/ProjectDetailView";
@@ -20,6 +20,9 @@ const Routes: React.FC = () => {
 			</Route>
 			<Route exact path="/experience">
 				<ExperienceView />
+			</Route>
+			<Route exact path="/contact">
+				<ContactView />
 			</Route>
 		</Switch>
 	);
