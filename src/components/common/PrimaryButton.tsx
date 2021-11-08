@@ -3,6 +3,7 @@ import React from "react";
 interface Props {
 	buttonText: string;
 	buttonIcon?: string;
+	disabled?: boolean;
 	fullWidth?: boolean;
 	onClick?: () => void;
 }
@@ -10,14 +11,18 @@ interface Props {
 const PrimaryButton: React.FC<Props> = ({
 	buttonText,
 	buttonIcon,
+	disabled,
 	fullWidth,
 	onClick,
 }: Props) => {
+	const buttonActive = `bg-green-500 hover:shadow-md transition-all hover:bg-green-600 text-white `;
+	const buttonDisabled = `bg-transparent border border-green-500`;
 	return (
 		<button
-			className={`bg-green-500 p-3 rounded-md hover:shadow-md text-white font-medium transition-all hover:bg-green-600 ${
-				fullWidth && "w-full"
-			}`}
+			className={`${
+				disabled ? buttonDisabled : buttonActive
+			} p-3 rounded-md font-medium ${fullWidth && "w-full"}`}
+			disabled={disabled}
 			onClick={onClick}
 		>
 			<div className="flex gap-2 justify-center items-center">
