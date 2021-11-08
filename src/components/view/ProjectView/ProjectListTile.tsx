@@ -26,7 +26,11 @@ const ProjectListTile: React.FC = () => {
 						<ProjectCard
 							key={i}
 							title={project.projectName}
-							description={project.projectDescription}
+							description={
+								project.projectDescription.find(
+									(contentSection) => contentSection.title === "Summary"
+								)?.content[0].data || ""
+							}
 							thumbnail={project.thumbnail}
 							hoverImage={project.media[0].original}
 							link={`/projects/${project.id}`}
