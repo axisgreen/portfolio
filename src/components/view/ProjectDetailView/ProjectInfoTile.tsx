@@ -22,11 +22,11 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 				animationFillMode: "both",
 			}}
 			transition={{ duration: 0.4, delay: 0.2 }}
-			className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center px-2 max-h-80v  my-auto`}
+			className={`bg-gray-800 shadow-xl rounded-md md:px-14 overflow-y-scroll inline self-center max-h-80v my-auto`}
 			style={{ height: "615px", minHeight: "615px" }}
 		>
 			<div className="lg:max-w-sm max-h-96">
-				<div className="flex flex-col gap-4 py-10 px-10 md:px-0">
+				<div className="flex flex-col gap-4 py-10 px-8 md:px-0">
 					<div>
 						<BackButton />
 					</div>
