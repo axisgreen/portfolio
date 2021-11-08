@@ -50,7 +50,31 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.6 }}
 					>
-						<div>{project.projectDescription}</div>
+						<div className="flex flex-col gap-8">
+							{project.projectDescription.map((contentSection, i) => {
+								return (
+									<div>
+										<div className="text-xl underline mb-2">
+											{contentSection.title}
+										</div>
+										<div className="font-light text-lg flex flex-col">
+											{contentSection.content.map((contentData, i) => {
+												return (
+													<>
+														{contentData.type === "text" && (
+															<div className="my-2">{contentData.data}</div>
+														)}
+														{contentData.type === "list" && (
+															<li className="my-1">{contentData.data}</li>
+														)}
+													</>
+												);
+											})}
+										</div>
+									</div>
+								);
+							})}
+						</div>
 					</motion.div>
 
 					<motion.div
