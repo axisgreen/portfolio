@@ -59,12 +59,16 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 						transition={{ delay: 0.8 }}
 						className="w-full"
 					>
-						<PrimaryButton
-							buttonText="Live Demo"
-							buttonIcon={Icons.eyeIcon}
-							fullWidth
-							onClick={() => openUrlInNewTab(project.liveDemoLink)}
-						/>
+						{project.isDemoAvailable ? (
+							<PrimaryButton
+								buttonText="Live Demo"
+								buttonIcon={Icons.eyeIcon}
+								fullWidth
+								onClick={() => openUrlInNewTab(project.liveDemoLink)}
+							/>
+						) : (
+							<PrimaryButton buttonText="Demo Unavailable" fullWidth disabled />
+						)}
 					</motion.div>
 					<motion.div
 						initial={{ opacity: 0 }}
