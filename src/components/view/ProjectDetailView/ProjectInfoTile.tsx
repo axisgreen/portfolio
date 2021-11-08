@@ -40,9 +40,27 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 						}}
 						transition={{ delay: 0.4 }}
 					>
-						<div className="p-4 border rounded-md hover:bg-white hover:text-black transition-all">
-							Related to Work Experience
-						</div>
+						{project.relatedWorkExperience && (
+							<div className="flex justify-between items-center p-4 border rounded-md hover:bg-white hover:text-black transition-all">
+								<div className="flex flex-col">
+									<div className="font-semibold">
+										{project.relatedWorkExperience.jobTitle}
+									</div>
+									<div className="text-xs">
+										{project.relatedWorkExperience.companyName}
+									</div>
+								</div>
+								<div>
+									<img
+										src={project.relatedWorkExperience.companyLogo}
+										alt="Company Logo"
+										width="40px"
+										height="40px"
+										className="bg-white rounded-md p-1"
+									/>
+								</div>
+							</div>
+						)}
 					</motion.div>
 
 					<motion.div
