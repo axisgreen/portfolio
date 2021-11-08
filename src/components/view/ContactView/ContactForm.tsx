@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Icons } from "../../assets/assets";
-import PrimaryButton from "../common/PrimaryButton";
-import InputField from "./InputField";
+import { Icons } from "../../../assets/assets";
+import PrimaryButton from "../../common/PrimaryButton";
+import InputField from "../../forms/InputField";
 
 const ContactForm: React.FC = () => {
 	// Contact form for netlify
@@ -19,7 +19,6 @@ const ContactForm: React.FC = () => {
 				name="contact"
 				method="POST"
 				data-netlify="true"
-				data-netlify-recaptcha="true"
 				className="flex flex-1"
 			>
 				<div className="flex flex-col flex-wrap gap-4 w-full p-6">
@@ -28,7 +27,6 @@ const ContactForm: React.FC = () => {
 					<InputField name="email" label="E-Mail" type="email" isRequired />
 					<InputField name="subject" label="Subject" isRequired />
 					<InputField name="message" label="Message" isTextArea isRequired />
-					<div data-netlify-recaptcha="true"></div>
 					<div className="my-2">
 						<PrimaryButton
 							buttonIcon={Icons.chevronRight}
