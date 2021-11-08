@@ -61,7 +61,7 @@ const ProjectCard: React.FC<Props> = ({
 				)}
 				<div className="flex flex-col sm:gap-2 justify-center ">
 					<div className="text-xl font-semibold">{title}</div>
-					<div className="max-w-md">{description.slice(0, 120)}...</div>
+					<div className="max-w-md">{description.slice(0, 180)}...</div>
 				</div>
 			</div>
 		</NavLink>

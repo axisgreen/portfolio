@@ -1,6 +1,6 @@
 import { Logos } from "../assets/assets";
 
-interface IExperience {
+export interface IExperience {
 	jobTitle: string;
 	companyName: string;
 	companyLogo: string;

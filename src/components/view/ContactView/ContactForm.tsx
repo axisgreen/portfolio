@@ -27,11 +27,10 @@ const ContactForm: React.FC = () => {
 					<InputField name="email" label="E-Mail" type="email" isRequired />
 					<InputField name="subject" label="Subject" isRequired />
 					<InputField name="message" label="Message" isTextArea isRequired />
-					<div className="my-2">
+					<div className="flex justify-end my-2">
 						<PrimaryButton
 							buttonIcon={Icons.chevronRight}
 							buttonText="Send Message"
-							fullWidth
 						/>
 					</div>
 				</div>
