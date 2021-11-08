@@ -1,5 +1,5 @@
 import Heading from "../components/common/Heading";
-import ContactForm from "../components/forms/ContactForm";
+import ContactForm from "../components/view/ContactView/ContactForm";
 import PageFade from "../components/transitions/PageFade";
 
 const ContactView: React.FC = () => {
