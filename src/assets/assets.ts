@@ -109,6 +109,7 @@ import measureupScreen1 from "./projects/measureup/screen-1.png";
 import measureupScreen2 from "./projects/measureup/screen-2.png";
 import measureupScreen3 from "./projects/measureup/screen-3.png";
 import measureupScreen4 from "./projects/measureup/screen-4.png";
+import measureupScreen5 from "./projects/measureup/screen-5.png";
 
 // Other assets
 import iphone from "./iphone-x.svg";
@@ -229,6 +230,7 @@ const Screenshots = {
 		measureupScreen2,
 		measureupScreen3,
 		measureupScreen4,
+		measureupScreen5,
 	},
 };
 

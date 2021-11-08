@@ -206,6 +206,7 @@ const ScreenshotGallery: Gallery = {
 		{ original: Screenshots.measureup.measureupScreen2 },
 		{ original: Screenshots.measureup.measureupScreen3 },
 		{ original: Screenshots.measureup.measureupScreen4 },
+		{ original: Screenshots.measureup.measureupScreen5 },
 	],
 };
 
