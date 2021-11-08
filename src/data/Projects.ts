@@ -1,5 +1,6 @@
 import { ReactImageGalleryItem } from "react-image-gallery";
 import { Icons, Thumbnails } from "../assets/assets";
+import Experiences, { IExperience } from "./Experiences";
 import ScreenshotGallery from "./ScreenshotGallery";
 
 type Technology = {
@@ -30,15 +31,26 @@ type Technology = {
 
 type ProjectTarget = "mobile" | "web" | "desktop";
 
+type Content = {
+	type: "text" | "list";
+	data: string;
+};
+
+interface ContentSection {
+	title: string;
+	content: Content[];
+}
+
 interface Project {
 	id: string;
 	projectName: string;
-	projectDescription: string;
+	projectDescription: ContentSection[];
 	technologiesUsed: Technology[];
 	projectTarget: ProjectTarget;
 	media: ReactImageGalleryItem[];
 	thumbnail: string;
-	relatedWorkExperience: string;
+	relatedWorkExperience?: IExperience;
+	isDemoAvailable: boolean;
 	liveDemoLink: string;
 	isOpenSource: boolean;
 	openSourceRepo: string;
