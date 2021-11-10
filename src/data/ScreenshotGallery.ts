@@ -208,6 +208,16 @@ const ScreenshotGallery: Gallery = {
 		{ original: Screenshots.measureup.measureupScreen4 },
 		{ original: Screenshots.measureup.measureupScreen5 },
 	],
+	iservice: [
+		{ original: Screenshots.iservice.iserviceHome },
+		{ original: Screenshots.iservice.iserviceRegister },
+		{ original: Screenshots.iservice.iserviceResetPassword },
+		{ original: Screenshots.iservice.iserviceProfile },
+		{ original: Screenshots.iservice.iserviceNewTask },
+		{ original: Screenshots.iservice.iserviceChat },
+		{ original: Screenshots.iservice.iserviceTaskDetail },
+		{ original: Screenshots.iservice.iservicePayments },
+	],
 };
 
 export default ScreenshotGallery;

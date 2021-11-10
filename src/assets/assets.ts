@@ -111,6 +111,15 @@ import measureupScreen3 from "./projects/measureup/screen-3.png";
 import measureupScreen4 from "./projects/measureup/screen-4.png";
 import measureupScreen5 from "./projects/measureup/screen-5.png";
 
+import iserviceHome from "./projects/iservice/iservice-home.png";
+import iserviceRegister from "./projects/iservice/iservice-register.png";
+import iserviceProfile from "./projects/iservice/iservice-profile.png";
+import iserviceResetPassword from "./projects/iservice/iservice-reset-password.png";
+import iserviceNewTask from "./projects/iservice/iservice-new-task.png";
+import iserviceTaskDetail from "./projects/iservice/iservice-task-detail.png";
+import iservicePayments from "./projects/iservice/iservice-payments.png";
+import iserviceChat from "./projects/iservice/iservice-chat.png";
+
 // Other assets
 import iphone from "./iphone-x.svg";
 import monitor from "./monitor.svg";
@@ -231,6 +240,16 @@ const Screenshots = {
 		measureupScreen3,
 		measureupScreen4,
 		measureupScreen5,
+	},
+	iservice: {
+		iserviceHome,
+		iserviceRegister,
+		iserviceProfile,
+		iserviceResetPassword,
+		iserviceNewTask,
+		iserviceTaskDetail,
+		iservicePayments,
+		iserviceChat,
 	},
 };
 
