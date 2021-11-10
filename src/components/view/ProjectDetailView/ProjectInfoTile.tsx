@@ -28,7 +28,7 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 			<div className="lg:max-w-sm max-h-96">
 				<div className="flex flex-col gap-4 py-10 px-8 md:px-0">
 					<div>
-						<BackButton />
+						<BackButton altBackURL="/projects" overrideDefault />
 					</div>
 					<Heading variant="section">{project.projectName}</Heading>
 					<TechUsedGroup technologiesUsed={project.technologiesUsed} />
