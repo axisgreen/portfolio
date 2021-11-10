@@ -2,12 +2,18 @@ import { useHistory } from "react-router";
 import { Icons } from "../../assets/assets";
 import "./BackButton.css";
 
-const BackButton: React.FC = () => {
+interface Props {
+	altBackURL?: string;
+	overrideDefault?: boolean; // Always use the alt back URL instead of router back functionality
+}
+
+const BackButton: React.FC<Props> = ({ altBackURL, overrideDefault }) => {
 	const history = useHistory();
+	const backURL = overrideDefault && altBackURL;
 	return (
 		<button
 			className="rounded-md p-2 hover:shadow-lg border hover:bg-white hover:text-black transition-all chevron-parent text-xs"
-			onClick={() => history.goBack()}
+			onClick={() => (backURL ? history.push(backURL) : history.goBack())}
 		>
 			<div className="flex gap-2">
 				<div className="flex items-center">
