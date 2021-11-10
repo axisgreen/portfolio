@@ -409,7 +409,7 @@ const Projects: Project[] = [
 			{ tooltip: "Google Cloud Platform (GCP)", icon: Icons.gcpIcon },
 		],
 		projectTarget: "web",
-		media: [{ original: "https://via.placeholder.com/250x200" }],
+		media: ScreenshotGallery.iservice,
 		thumbnail: Thumbnails.iserviceThumb,
 		isDemoAvailable: false,
 		liveDemoLink: "",
