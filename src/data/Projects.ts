@@ -216,6 +216,19 @@ const Projects: Project[] = [
 					},
 				],
 			},
+			{
+				title: "Demo Credentials",
+				content: [
+					{
+						type: "text",
+						data: "Username: demo | Password: demotestpass",
+					},
+					{
+						type: "text",
+						data: "Note: Live demo might take up to 30 seconds on first load.",
+					},
+				],
+			},
 		],
 		technologiesUsed: [
 			{ tooltip: "Python", icon: Icons.pythonIcon },
@@ -294,6 +307,19 @@ const Projects: Project[] = [
 					{
 						type: "list",
 						data: `Permission controls and audit logs for users`,
+					},
+				],
+			},
+			{
+				title: "Demo Credentials",
+				content: [
+					{
+						type: "text",
+						data: "Username: demo | Password: demoaccount",
+					},
+					{
+						type: "text",
+						data: "Note: Live demo might take up to 30 seconds on first load.",
 					},
 				],
 			},
