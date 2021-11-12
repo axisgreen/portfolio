@@ -39,7 +39,7 @@ const ScaleOutReveal: React.FC<Props> = ({
 				>
 					<img
 						src={imageToReveal}
-						alt="Revealed Image"
+						alt="Revealed"
 						className="rounded-md"
 						width={200}
 						height={150}
