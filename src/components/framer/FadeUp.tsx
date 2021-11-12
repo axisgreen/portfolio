@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 interface Props {
 	transitionDelay?: number;
-	className: string;
+	className?: string;
 }
 
 /**
