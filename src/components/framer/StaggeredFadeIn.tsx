@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, MotionStyle } from "framer-motion";
 
 interface Props {
 	i: number;
 	transitionDelay?: number;
 	className?: string;
+	style?: MotionStyle;
 }
 
 const StaggeredFadeIn: React.FC<Props> = ({
@@ -11,6 +12,7 @@ const StaggeredFadeIn: React.FC<Props> = ({
 	transitionDelay = 0.2,
 	className,
 	children,
+	style,
 }) => {
 	return (
 		<motion.div
@@ -21,6 +23,7 @@ const StaggeredFadeIn: React.FC<Props> = ({
 			}}
 			transition={{ delay: transitionDelay * i }}
 			className={className}
+			style={style}
 		>
 			{children}
 		</motion.div>
