@@ -5,6 +5,9 @@ interface Props {
 	className: string;
 }
 
+/**
+ * Framer motion component for fading while sliding upwards slightly
+ */
 const FadeUp: React.FC<Props> = ({
 	transitionDelay = 0.2,
 	className,
