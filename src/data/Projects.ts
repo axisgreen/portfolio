@@ -36,7 +36,7 @@ type Content = {
 	data: string;
 };
 
-interface ContentSection {
+export interface ContentSection {
 	title: string;
 	content: Content[];
 }
