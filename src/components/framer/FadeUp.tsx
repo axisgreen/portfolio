@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";
+import { motion, MotionStyle } from "framer-motion";
 
 interface Props {
 	transitionDelay?: number;
 	className?: string;
+	style?: MotionStyle;
 }
 
 /**
@@ -12,6 +13,7 @@ const FadeUp: React.FC<Props> = ({
 	transitionDelay = 0.2,
 	className,
 	children,
+	style,
 }) => {
 	return (
 		<motion.div
@@ -22,6 +24,7 @@ const FadeUp: React.FC<Props> = ({
 			}}
 			transition={{ delay: transitionDelay }}
 			className={className}
+			style={style}
 		>
 			{children}
 		</motion.div>
