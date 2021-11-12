@@ -7,6 +7,8 @@ import PrimaryButton from "../../common/PrimaryButton";
 import ViewSourceButton from "../../common/ViewSourceButton";
 import FadeIn from "../../framer/FadeIn";
 import FadeUp from "../../framer/FadeUp";
+import ProjectDescContainer from "./ProjectDescContainer";
+import RelatedExperience from "./RelatedExperienceCard";
 import TechUsedGroup from "./TechUsedGroup";
 
 interface Props {
@@ -25,56 +27,15 @@ const ProjectInfoTile: React.FC<Props> = ({ project }) => {
 					<BackButton altBackURL="/projects" overrideDefault />
 					<Heading variant="section">{project.projectName}</Heading>
 					<TechUsedGroup technologiesUsed={project.technologiesUsed} />
-
 					<FadeIn transitionDelay={0.4}>
 						{project.relatedWorkExperience && (
-							<div className="flex justify-between items-center p-4 border rounded-md hover:bg-white hover:text-black transition-all">
-								<div className="flex flex-col">
-									<div className="font-semibold">
-										{project.relatedWorkExperience.jobTitle}
-									</div>
-									<div className="text-xs">
-										{project.relatedWorkExperience.companyName}
-									</div>
-								</div>
-								<div>
-									<img
-										src={project.relatedWorkExperience.companyLogo}
-										alt="Company Logo"
-										width="40px"
-										height="40px"
-										className="bg-white rounded-md p-1"
-									/>
-								</div>
-							</div>
+							<RelatedExperience
+								relatedExperience={project.relatedWorkExperience}
+							/>
 						)}
 					</FadeIn>
 					<FadeIn transitionDelay={0.6}>
-						<div className="flex flex-col gap-8">
-							{project.projectDescription.map((contentSection, i) => {
-								return (
-									<div>
-										<div className="text-xl underline mb-2">
-											{contentSection.title}
-										</div>
-										<div className="font-light text-lg flex flex-col">
-											{contentSection.content.map((contentData, i) => {
-												return (
-													<>
-														{contentData.type === "text" && (
-															<div className="my-2">{contentData.data}</div>
-														)}
-														{contentData.type === "list" && (
-															<li className="my-1">{contentData.data}</li>
-														)}
-													</>
-												);
-											})}
-										</div>
-									</div>
-								);
-							})}
-						</div>
+						<ProjectDescContainer description={project.projectDescription} />
 					</FadeIn>
 					<FadeIn transitionDelay={0.8} className="w-full">
 						{project.isDemoAvailable ? (
