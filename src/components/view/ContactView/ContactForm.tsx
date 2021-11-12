@@ -1,20 +1,12 @@
-import { motion } from "framer-motion";
 import { Icons } from "../../../assets/assets";
 import PrimaryButton from "../../common/PrimaryButton";
 import InputField from "../../forms/InputField";
+import FadeUp from "../../framer/FadeUp";
 
 const ContactForm: React.FC = () => {
 	// Contact form for netlify
 	return (
-		<motion.div
-			initial={{ translateY: 40, opacity: 0 }}
-			animate={{
-				translateY: 0,
-				opacity: 1,
-			}}
-			transition={{ delay: 0.2 }}
-			className="flex flex-col bg-gray-800 shadow-xl rounded-md"
-		>
+		<FadeUp className="flex flex-col bg-gray-800 shadow-xl rounded-md">
 			<form
 				name="contact"
 				method="POST"
@@ -35,7 +27,7 @@ const ContactForm: React.FC = () => {
 					</div>
 				</div>
 			</form>
-		</motion.div>
+		</FadeUp>
 	);
 };
 
