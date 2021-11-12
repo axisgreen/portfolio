@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ScaleOutReveal from "../framer/ScaleOutReveal";
 
 interface Props {
 	title: string;
@@ -26,39 +26,11 @@ const ProjectCard: React.FC<Props> = ({
 				onMouseEnter={() => setShowThumbnail(false)}
 				onMouseLeave={() => setShowThumbnail(true)}
 			>
-				{showThumbnail ? (
-					<motion.div
-						initial={{ opacity: 0, scale: 1 }}
-						animate={{ opacity: 1, scale: 1 }}
-						exit={{ opacity: 0, scale: 1.1 }}
-						className="flex justify-center"
-						style={{ minWidth: "200px" }}
-					>
-						<img
-							src={thumbnail}
-							alt="Project Card Thumbnail"
-							className="rounded-md"
-							width={200}
-							height={150}
-						/>
-					</motion.div>
-				) : (
-					<motion.div
-						initial={{ opacity: 0, scale: 1 }}
-						animate={{ opacity: 1, scale: 1.1 }}
-						exit={{ opacity: 0, scale: 1 }}
-						className="flex justify-center"
-						style={{ minWidth: "200px" }}
-					>
-						<img
-							src={hoverImage}
-							alt="Card"
-							className="rounded-md"
-							width={200}
-							height={150}
-						/>
-					</motion.div>
-				)}
+				<ScaleOutReveal
+					reveal={showThumbnail}
+					thumbnail={thumbnail}
+					imageToReveal={hoverImage}
+				/>
 				<div className="flex flex-col sm:gap-2 justify-center ">
 					<div className="text-xl font-semibold">{title}</div>
 					<div className="max-w-md">{description.slice(0, 180)}...</div>

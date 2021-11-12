@@ -1,41 +1,28 @@
 import { Icons } from "../../../assets/assets";
-import "./Footer.css";
+import SocialIconGroup from "./SocialIconGroup";
 const Footer = () => {
 	return (
 		<div className="flex flex-row-reverse justify-between 3xl:inline 3xl:mx-auto text-white">
 			{/* Socials Cluster */}
-			<div className="flex 2xl:justify-center gap-1 2xl:my-1">
-				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
-					<a
-						href="mailto:dlhbdissanayake@gmail.com"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img src={Icons.mailIcon} alt="Email (Haritha Dissanayake)" />
-					</a>
-				</div>
-				<div className="icon-tile hover:bg-black rounded-md p-2 transition-all cursor-pointer">
-					<a
-						href="https://github.com/axisgreen"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img src={Icons.githubIcon} alt="Github (@axisgreen)" />
-					</a>
-				</div>
-				<div className="icon-tile text-black p-2 hover:bg-black rounded-md transition-all cursor-pointer">
-					<a
-						href="https://linkedin.com/in/haritha-dissanayake-a49661180"
-						target="_blank"
-						rel="noreferrer"
-					>
-						<img
-							src={Icons.linkedinIcon}
-							alt="LinkedIn (Haritha Dissanayake)"
-						/>
-					</a>
-				</div>
-			</div>
+			<SocialIconGroup
+				socialIcons={[
+					{
+						icon: Icons.mailIcon,
+						href: "mailto:dlhbdissanayake@gmail.com",
+						altText: "Email (Haritha Dissanayake)",
+					},
+					{
+						icon: Icons.githubIcon,
+						href: "https://github.com/axisgreen",
+						altText: "Github (@axisgreen)",
+					},
+					{
+						icon: Icons.linkedinIcon,
+						href: "https://linkedin.com/in/haritha-dissanayake-a49661180",
+						altText: "LinkedIn (Haritha Dissanayake)",
+					},
+				]}
+			/>
 			{/* Attribution */}
 			<div className="my-auto text-sm sm:text-base">
 				&copy; Haritha Dissanayake 2021
