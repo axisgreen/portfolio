@@ -3,11 +3,16 @@ import { Icons } from "../../assets/assets";
 import "./BackButton.css";
 
 interface Props {
+	buttonText?: string;
 	altBackURL?: string;
 	overrideDefault?: boolean; // Always use the alt back URL instead of router back functionality
 }
 
-const BackButton: React.FC<Props> = ({ altBackURL, overrideDefault }) => {
+const BackButton: React.FC<Props> = ({
+	buttonText = "Back",
+	altBackURL,
+	overrideDefault,
+}) => {
 	const history = useHistory();
 	const backURL = overrideDefault && altBackURL;
 	return (
@@ -27,7 +32,7 @@ const BackButton: React.FC<Props> = ({ altBackURL, overrideDefault }) => {
 							style={{ paddingTop: "1px", paddingBottom: "1px" }}
 						/>
 					</div>
-					<div className="items-center justify-center">Back</div>
+					<div className="items-center justify-center">{buttonText}</div>
 				</div>
 			</button>
 		</div>
