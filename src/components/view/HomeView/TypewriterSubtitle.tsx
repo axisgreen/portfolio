@@ -10,7 +10,7 @@ interface Props {
  * the last one is reached
  */
 const TypewriterSubtitle: React.FC<Props> = ({ backspaceDelay = 1000 }) => {
-	const textList = ["<Web", "Mobile", "Full-stack Developer />"];
+	const textList = ["<", "Web", "Mobile", "Full-stack Developer />"];
 	return (
 		<div className="mx-1 py-4 text-xl sm:text-2xl lg:text-4xl font-mono">
 			<div className="flex">
@@ -21,10 +21,11 @@ const TypewriterSubtitle: React.FC<Props> = ({ backspaceDelay = 1000 }) => {
 					}}
 				>
 					{textList[0]}
-					<Typist.Backspace count={textList[0].length} delay={backspaceDelay} />
 					{textList[1]}
 					<Typist.Backspace count={textList[1].length} delay={backspaceDelay} />
 					{textList[2]}
+					<Typist.Backspace count={textList[2].length} delay={backspaceDelay} />
+					{textList[3]}
 				</Typist>
 			</div>
 		</div>
